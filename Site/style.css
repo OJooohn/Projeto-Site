@@ -19,8 +19,12 @@ header {
 }
 
 article {
+  height: 100vh; 
   background-color: azure;
-  height: auto; 
+  background: linear-gradient(72deg, black) 10% , #464646 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -52,4 +56,110 @@ h1 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+.navigation-bar {
+  position: absolute;
+  bottom: 20px;
+
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+input {
+  display: none;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #fff;
+  transition: 0.4s;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+.slide {
+  width: 25%;
+  transition: 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+.navigation-auto {
+  position: absolute;
+  bottom: 20px;
+
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.navigation-auto div {
+  border: 2px solid #fff;
+
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+
+#radio2:checked ~.navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+
+#radio3:checked ~.navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+
+#radio4:checked ~.navigation-auto .auto-btn4 {
+  background-color: #fff;
 }

@@ -12,11 +12,48 @@
       <h1 style="color: white;">Aqui ficará a logo do site e acessar o perfil à direita</h1>
     </header>
     <article>
-      <h2>SlideShow</h2>
-      <p>Aqui vai ficar um slideshow que irá passar as notícias atuais dos jogos</p>
-      <p>O slideshow fará a imagem ir da direita para a esquerda, terá opção de mudar as notícias,
-        o título da notícia ficará no canto inferior esquerdo, a cada notícia que passa terá uma transição também!
-      </p>
+      <div class="slider">
+
+        <div class="slides">
+
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
+          <div class="slide first">
+            <img src="./img/cs2.png" alt="counter strike 2">
+          </div>
+
+          <div class="slide">
+            <img src="./img/Cyberpunk.jpg" alt="cyberpunk 2077">
+          </div>
+
+          <div class="slide">
+            <img src="./img/GTA6.jpg" alt="gta VI">
+          </div>
+
+          <div class="slide">
+            <img src="./img/Xbox Vazamentos.jpg" alt="xbox leaks">
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+
+        </div>
+
+        <div class="navigation-bar">
+          <label class="manual-btn" for="radio1"></label>
+          <label class="manual-btn" for="radio2"></label>
+          <label class="manual-btn" for="radio3"></label>
+          <label class="manual-btn" for="radio4"></label>
+        </div>
+
+      </div>
     </article>
     <nav>
       <p>Aqui ficará a barra de navegação para mudar de subtemas de jogos eletrônicos</p>
