@@ -40,8 +40,12 @@ article {
 }
 
 article h1 {
-  color: #fff;
-  position: left;
+  color: #fd0000;
+
+  font-size: 50px;
+  margin-top: 450px;
+  margin-left: 30px;
+  position: absolute;
 }
 
 a:link {
@@ -122,13 +126,14 @@ input {
   display: none;
 }
 
-.manual-btn {
+.navigation-bar .manual-btn {
   border: 2px solid #fff;
-
+  
   width: 10px;
   padding: 7px;
   border-radius: 20px;
   cursor: pointer;
+  transition: 1s;
 }
 
 .manual-btn:not(:last-child) {
@@ -147,22 +152,8 @@ input {
   animation-duration: 0.5s;
 }
 
-@keyframes myanimation {
-  from{
-    background-color: #ffffff00;
-  }
-  to {
-    background-color: #fff;
-  }
-}
-
-@keyframes reverse {
-  from {
-    background-color: #fff;
-  }
-  to{
-    background-color: #ffffff00;
-  }
+.navigation-auto .auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4 {
+  transition: 1s;
 }
 
 .slides {
