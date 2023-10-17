@@ -49,7 +49,12 @@ article h2 {
   position: absolute;
 }
 
-a:link {
+nav a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+header a {
   color: inherit;
   text-decoration: none;
 }
