@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
 * {
@@ -42,22 +42,6 @@ header h1 {
   padding-left: 10px;
 }
 
-article {
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-article h2 {
-  color: #fd000000;
-
-  font-size: 50px;
-  margin-top: 450px;
-  margin-left: 30px;
-  position: absolute;
-}
-
 nav a:link {
   color: inherit;
   text-decoration: none;
@@ -87,24 +71,6 @@ li {
   margin: 10px;
 }
 
-section {
-  background-color: antiquewhite;
-  width: 80%;
-  height: 1000px;
-  float: left;
-  padding: 0px;
-  margin: 0px;
-}
-
-aside {
-  background-color: burlywood;
-  width: 20%;
-  float: right;
-  padding: 0px;
-  margin: 0px;
-  height: 1000px;
-}
-
 footer {
   background-color: #000000;
   height: 100px;
@@ -120,197 +86,6 @@ h3 {
 
 p {
   font-family: 'Work Sans', sans-serif;
-}
-
-.slider {
-  width: auto;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
-}
-
-.navigation-bar {
-  position: absolute;
-  bottom: 20px;
-
-  left: 50%;
-  transform: translate(-50%);
-  display: flex;
-}
-
-input {
-  display: none;
-}
-
-.navigation-bar .manual-btn {
-  border: 2px solid #868686be;
-  
-  width: 50px;
-  padding: 7px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-  margin-right: 40px;
-}
-
-.manual-btn:hover {
-  background: #fff;
-  animation-name: myanimation;
-  animation-duration: 0.5s;
-  transition: 0.5s;
-}
-
-.manual-btn {
-  animation-name: reverse;
-  animation-duration: 0.5s;
-}
-
-.navigation-auto .auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4 {
-  transition: 1s;
-}
-
-.slides {
-  display: flex;
-  width: 400%;
-  height: 100%;
-}
-
-.slide {
-  width: 25%;
-  transition: 1s;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -75%;
-}
-
-.navigation-auto {
-  position: absolute;
-  bottom: 20px;
-
-  display: flex;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.navigation-auto div {
-  border: 2px solid #3f3f3f89;
-
-  width: 50px;
-  padding: 7px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.navigation-auto div:not(:last-child) {
-  margin-right: 40px;
-}
-
-#radio1:checked ~.navigation-auto .auto-btn1 {
-  background-color: #868686be;
-}
-
-#radio2:checked ~.navigation-auto .auto-btn2 {
-  background-color: #868686be;
-}
-
-#radio3:checked ~.navigation-auto .auto-btn3 {
-  background-color: #868686be;
-}
-
-#radio4:checked ~.navigation-auto .auto-btn4 {
-  background-color: #868686be;
-}
-
-#radio1:checked ~.slide .text1 {
-  display: flex;
-  animation-name: faded;
-  animation-duration: 1s;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #00000072;
-  color: #ffffff;
-}
-
-#radio2:checked ~.slide .text2 {
-  display: flex;
-  animation-name: faded;
-  animation-duration: 1s;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #00000072;
-  color: #ffffff;
-}
-
-#radio3:checked ~.slide .text3 {
-  display: flex;
-  animation-name: faded;
-  animation-duration: 1s;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #00000072;
-  color: #ffffff;
-}
-
-#radio4:checked ~.slide .text4 {
-  display: flex;
-  animation-name: faded;
-  animation-duration: 1s;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #00000072;
-  color: #ffffff;
-}
-
-.slide .text {
-  position: absolute;
-  bottom: 30%;
-  left: 50px;
-
-  display: none;
-  font-size: 50px;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-.slide .background-text h2 {
-  background-size: cover;
-  background-color: #00000000;
-  margin: 0 auto;
-  padding: 20px;
-  position: absolute;
-}
-
-@keyframes faded {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 ::-webkit-scrollbar {
