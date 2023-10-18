@@ -11,6 +11,15 @@
   border: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+article a {
+  color: inherit;
+  text-decoration: none;
+}
+
 main {
   width: 100%;
   height: 100%;
@@ -229,23 +238,43 @@ input {
 }
 
 #radio1:checked ~.slide .text1 {
+  display: flex;
+  animation-name: faded;
+  animation-duration: 1s;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #00000072;
   color: #ffffff;
-  transition-duration: 1s;
 }
 
 #radio2:checked ~.slide .text2 {
+  display: flex;
+  animation-name: faded;
+  animation-duration: 1s;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #00000072;
   color: #ffffff;
-  transition-duration: 1s;
 }
 
 #radio3:checked ~.slide .text3 {
+  display: flex;
+  animation-name: faded;
+  animation-duration: 1s;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #00000072;
   color: #ffffff;
-  transition-duration: 1s;
 }
 
 #radio4:checked ~.slide .text4 {
+  display: flex;
+  animation-name: faded;
+  animation-duration: 1s;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #00000072;
   color: #ffffff;
-  transition-duration: 1s;
 }
 
 .slide .text {
@@ -253,20 +282,28 @@ input {
   bottom: 30%;
   left: 50px;
 
-  display: flex;
+  display: none;
   font-size: 50px;
 }
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s, 1.5s;
+  animation-duration: 1.5s;
 }
 
-@keyframes fade {
-  from {
+.slide .background-text h2 {
+  background-size: cover;
+  background-color: #00000000;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+}
+
+@keyframes faded {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
