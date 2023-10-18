@@ -143,7 +143,7 @@ input {
 }
 
 .navigation-bar .manual-btn {
-  border: 2px solid #fff;
+  border: 2px solid #868686be;
   
   width: 50px;
   padding: 7px;
@@ -214,7 +214,7 @@ input {
 }
 
 .navigation-auto div {
-  border: 2px solid #fff;
+  border: 2px solid #3f3f3f89;
 
   width: 50px;
   padding: 7px;
@@ -227,19 +227,19 @@ input {
 }
 
 #radio1:checked ~.navigation-auto .auto-btn1 {
-  background-color: #fff;
+  background-color: #868686be;
 }
 
 #radio2:checked ~.navigation-auto .auto-btn2 {
-  background-color: #fff;
+  background-color: #868686be;
 }
 
 #radio3:checked ~.navigation-auto .auto-btn3 {
-  background-color: #fff;
+  background-color: #868686be;
 }
 
 #radio4:checked ~.navigation-auto .auto-btn4 {
-  background-color: #fff;
+  background-color: #868686be;
 }
 
 #radio1:checked ~.slide .text1 {
