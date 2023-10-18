@@ -32,6 +32,7 @@ header {
   height: 50px;
   display: grid;
   align-items: center;
+  padding: 10px;
 }
 
 header h1 {
@@ -55,14 +56,38 @@ header a {
 nav {
   text-align: center;
   background-color: #000000;
-  height: 50px;
+  height: auto;
 }
 
 nav p {
   font-family: 'Gabarito', sans-serif;
   font-size: 1.5em;
   color: #fff;
+}
+
+nav li {
   margin-right: 50px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  background-color: #f70000;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+nav a:hover:after {
+  width: 100%;
 }
 
 li {
@@ -72,8 +97,15 @@ li {
 }
 
 footer {
-  background-color: #000000;
-  height: 100px;
+  background-color: #0f0f0f;
+  height: 50;
+}
+
+footer p {
+  padding: 10px;
+  color: #929292;
+  display: grid;
+  text-align: center;
 }
 
 h2 {
