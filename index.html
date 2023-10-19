@@ -8,11 +8,17 @@
   <link rel="icon" href="./img/index/void.png">
 </head>
 <style>
+
 article {
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+article a {
+  color: inherit;
+  text-decoration: none;
 }
 
 article h2 {
@@ -25,53 +31,55 @@ article h2 {
 }
 
 section {
-  background-color: antiquewhite;
+  background-color: #cacaca;
+
   width: 80%;
+  height: 2000px;
   float: left;
+
   margin: 0px;
-  height: auto;
   padding: 0px 0px 20px 0px;
-}
-
-.vl {
-  border-right: 1px solid rgb(0, 0, 0);
-  height: 2000px;
-  margin: auto;
-}
-
-aside {
-  background-color: #faebd7;
-  width: 20%;
-  float: right;
-  margin: 0px;
-  height: 2000px;
-  padding: 0px 0px 20px 0px;
-}
-
-.center {
-  height: 300px;
-  padding: 1px;
-  left: 50%;
-  margin-left: -100px;
-  position: relative;
-  text-align: center;
-  width: 200px;
-}
-
-input {
-  display: none;
 }
 
 section hr {
 	border: 1;
-	border-top: 1px solid #3a3a3a;
+	border-top: 1px solid #000000;
   margin: 35px 10px 0px 10px;
+}
+
+aside {
+  background-color: #cacaca;
+
+  width: 19.91%;
+  height: 2000px;
+  float: right;
+
+  margin: 0px;
+  padding: 0px 0px 20px 0px;
+
+  border-left: 1px solid #000000;
 }
 
 aside hr {
   border: 1;
 	border-top: 1px solid #000000;
   margin: 20px 10px -10px 10px;
+}
+
+.center {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  left: 50%;
+
+  padding: 1px;
+  margin-left: -100px;
+
+  text-align: center;
+}
+
+input {
+  display: none;
 }
 
 .slider {
@@ -266,14 +274,20 @@ aside hr {
 }
 
 </style>
+
 <main>
+
   <body>
+
     <header>
+
       <a href="index.html"><img src="./img/index/void.png"><h1>VOID NEWS</h1></a>
+      
     </header>
+
     <article>
+
       <div class="slider">
-        
         
         <div class="slides">
           
@@ -285,13 +299,16 @@ aside hr {
           <div class="slide first">
 
             <div class="backgroud-text">
+
               <h2 class="text text1 fade"><a href="#noticia1" style="margin-left: 10px;">Counter Strike 2<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Atualização da engine trás novidades ao jogo</p></a></h2>
               <h2 class="text text2 fade"><a href="#noticia2" style="margin-left: 10px;">Cyberpunk 2077<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Nova DLC chega ao jogo com uma nova história</p></a></h2>
               <h2 class="text text3 fade"><a href="#noticia3" style="margin-left: 10px;">GTA VI<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Grande vazamento traz muitas novidades ao universo do jogo</p></a></h2>
               <h2 class="text text4 fade"><a href="#noticia4" style="margin-left: 10px;">Xbox<p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Maior vazamento de dados da história</p></a></h2>
+
             </div>
 
             <img src="./img/index/cs2.png" alt="counter strike 2">
+
           </div>
           
           <div class="slide">
@@ -323,33 +340,39 @@ aside hr {
         </div>
 
       </div>
+
     </article>
+
     <nav>
+
       <ul>
         <li><a href="./html/esports.html"><p>E-SPORTS</p></a></div></div></li>
         <li><a href="./html/historia.html"><p>HISTÓRIA</p></a></div></div></li>
-          
         <li><a href="./html/thegoats.html"><p>THE GOATS</p></a></li>
         <li><a href="./html/recordes.html"><p>RECORDES</p></a></li>
       </ul>
+
     </nav>
-    
 
       <section>
-        <div class="vl">
-  
+        
           <h2 id="teste" style="padding: 25px 0px 0px 25px; font-size: 33px;">Mundo dos Games</h2>
           <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+
             Para você que não está familiarizado com os games, aqui você irá ver o tamanho desse universo que vaga pela Internet!
             Então se aconchegue e desfrute de todos os detalhese notícias atuais dos games.
             <br>
             <br>
             Neste amplo universo que vai desde jogos de mesa, até os mais tecnólogicos VRs (Virtual Reality), você encontra de tudo
             dos jogos mais simples (Indies) até os maiores (AAA), todos tem seus propósitos de passar uma visão de uma narrativa do jogo
+
           </p>
+
           <hr>
+
           <h2 id="noticia1" style="padding: 25px 0px 0px 25px; font-size: 33px;">Counter Strike 2 Lançamento</h2>
           <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+
             Após tanto esperar por este momento tão especial para os fãs de Counter Strike, Valve a desenvolvedora do jogo, finalmente deu notícias
             sobre o novo jogo. Todos os jogadores estavam ansiosos de como seria a transição do Counter Strike : Global Offensive, e o grande motivo
             desse grande desespero foi de que muitos jogadores tinham inventários de skins caríssimos, podendo custar milhões de dólares.
@@ -370,10 +393,14 @@ aside hr {
             <br>
             No dia 27 de setembro de 2023, a data de lançamento do Counter Strike 2, o jogo bateu o seu recorde mundial de jogadores ativos ao mesmo tempo,
             chegando a marca de 1.8 milhões de jogadores.
+
           </p>
+
           <hr>
+
           <h2 id="noticia2" style="padding: 25px 0px 0px 25px; font-size: 33px;">Cyberpunk 2077 DLC</h2>
           <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+
             Cyberpunk 2077: Phantom Liberty chega em 27 de setembro para o PC, PlayStation 5 e Xbox Series X/S.
             A DLC Cyberpunk 2077: Phantom Liberty segue a história de V, o protagonista do jogo original, em busca da cura de um vírus neurochip.
             <br>
@@ -387,10 +414,14 @@ aside hr {
             <br>
             Segundo as informações do site PC Gamer, Phantom lIberty pode demorar cerca de 18 a 20 horas para ser completada, levando em consideração o jogador
             completar algumas missões secundárias e explorar um pouco Dogtown além de participar de alguns eventos da região nova.
+
           </p>
+
           <hr>
+
           <h2 id="noticia3" style="padding: 25px 0px 0px 25px; font-size: 33px;">Vazamento massivo de GTA VI</h2>
           <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+
             A Rockstar só tem o que comemorar com os 10 anos de GTA V e o lucro que tem tido com o jogo. Enquanto o sexto título principal da série não é revelado,
             um grupo de leakers criou um grande documento detalhando diversos aspectos de GTA VI baseado nos vazamentos que aconteceram no ano passado.
             <br>
@@ -409,10 +440,14 @@ aside hr {
             à polícia durante um assalto, sujar a roupa do personagem, crescer cabelos e barba dos protagonistas, comer e beber itens de seu inventário, fuamr e mais.
             <br>
             O documento lista ainda os animais e personagens que irão interagir com os protagonistas, além de descrever alguns detalhes, eventos, veículos, locais e muito mais.
+
           </p>
+
           <hr>
+
           <h2 id="noticia4" style="padding: 25px 0px 0px 25px; font-size: 33px;">38TB de dados da Microsoft são vazados</h2>
           <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+
             A empresa de segurança cibernética Wiz descobriu que 38 terabytes de dados privados do GitHub da Microsoft foram expostos acidentalmente por erro humano.
             A falha ocorreu quando a equipe de pesquisa em IA da empresa disponibilizou dados de treinamento em um repositório do GitHub.
             <br>
@@ -432,47 +467,75 @@ aside hr {
             <br>
             Phil Spencer, CEO da Xbox, enviou um e-mail mais detalhado aos funcionários da Microsoft. No memorando, ele expressou decepção pelo vazamento, mas reiterou
             que há muito mais a ser revelado e compartilhado com a comunidade de jogadores.
+
           </p>
-        </div>
+
       </section>
+
       <aside>
-        <h2 style="padding: 20px 20px 0px 20px;text-align: center;">Próximos lançamentos</h2>
-        <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Spider Man 2</h3>
-        <div class="center">
-          <img src="./img/index/spiderman2.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+
+        <div class="vl">
+
+          <h2 style="padding: 20px 20px 0px 20px;text-align: center;">Próximos lançamentos</h2>
+          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Spider Man 2</h3>
+
+            <div class="center">
+              <img src="./img/index/spiderman2.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+            </div>
+
+          <hr>
+
+          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Alan Wake 2</h3>
+
+            <div class="center">
+              <img src="./img/index/alanwake.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+            </div>
+
+          <hr>
+
+          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Little Nightmares III</h3>
+
+            <div class="center">
+              <img src="./img/index/littlenightmares3.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+            </div>
+
+          <hr>
+
+            <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Star Wars Outlaws</h3>
+
+            <div class="center">
+              <img src="./img/index/starwars.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+            </div>
+
+          <hr>
+
+          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Rise of the Ronin</h3>
+
+            <div class="center">
+              <img src="./img/index/ronin.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+            </div>
+
         </div>
-        <hr>
-        <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Alan Wake 2</h3>
-        <div class="center">
-          <img src="./img/index/alanwake.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-        </div>
-        <hr>
-        <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Little Nightmares III</h3>
-        <div class="center">
-          <img src="./img/index/littlenightmares3.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-        </div>
-        <hr>
-        <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Star Wars Outlaws</h3>
-        <div class="center">
-          <img src="./img/index/starwars.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-        </div>
-        <hr>
-        <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Rise of the Ronin</h3>
-        <div class="center">
-          <img src="./img/index/ronin.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-        </div>
+
       </aside>
     
-    <footer id="rodape">
+    <footer>
+      
       <p>&copy; 2023 - Todos os direitos reservados</p>
       <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
+
         <ul>
           <li><a href="#"><p>Termos de uso</p></a></li>
           <li><a href="#"><p>Política de privacidade</p></a></li>
           <li><a href="#"><p>Sobre nós</p></a></li>
         </ul>
+
     </footer>
+
   </body>
+
 <script src="./js/myscript.js"></script>
+
 </main>
+
 </html>
