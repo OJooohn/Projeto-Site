@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
 * {
@@ -10,6 +10,30 @@
   list-style: none;
   border: 0;
 }
+
+header img {
+  max-height: 50px;
+  width: auto;
+  display: flex;
+}
+
+header h1 {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+header a {
+  display: flex;
+  width: fit-content;
+  padding-left: 10px;
+}
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 html {
   scroll-behavior: smooth;
@@ -32,25 +56,13 @@ header {
   height: 50px;
   display: grid;
   align-items: center;
-  padding: 10px;
-}
-
-header img {
-  max-height: 50px;
-  width: auto;
-  display: flex;
 }
 
 header h1 {
-  padding-left: 10px;
-  padding-top: 5px;
-  font-family: 'Orbitron', sans-serif;
   color: #fff;
-}
-
-header a {
-  display: flex;
-  width: fit-content;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
   padding-left: 10px;
 }
 
@@ -67,23 +79,14 @@ header a {
 nav {
   text-align: center;
   background-color: #000000;
-  height: auto;
+  height: 50px;
 }
 
 nav p {
   font-family: 'Gabarito', sans-serif;
   font-size: 1.5em;
   color: #fff;
-}
-
-nav li {
   margin-right: 50px;
-}
-
-nav a {
-  position: relative;
-  text-decoration: none;
-  display: flex;
 }
 
 nav a::after {
@@ -102,6 +105,27 @@ nav a:hover:after {
   width: 100%;
 }
 
+.objectImage {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container p {
+  position: absolute;
+  top: 560px;
+  left: 20px;
+  font-size: 20px;
+  color: white;
+  font-family: poppins;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+}
+
 li {
   display: inline-block;
   color: #fff;
@@ -110,17 +134,7 @@ li {
 
 footer {
   background-color: #000000;
-  color: #aaaaaa;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  clear: both;
-  padding-top: 10px;
-}
-
-footer a {
-  color: inherit;
-  text-decoration: none;
+  height: 100px;
 }
 
 h2 {
@@ -129,8 +143,6 @@ h2 {
 
 h3 {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
 }
 
 p {
