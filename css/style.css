@@ -35,11 +35,8 @@ header {
   padding: 10px;
 }
 
-header h1 {
-  color: #fff;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 900;
-  font-size: 40px;
+header a {
+  width: 93px;
   padding-left: 10px;
 }
 
@@ -78,7 +75,7 @@ nav a {
 nav a::after {
   content: "";
   position: absolute;
-  background-color: #f70000;
+  background-color: #ffffff;
   height: 3px;
   width: 0;
   left: 0;
@@ -97,15 +94,19 @@ li {
 }
 
 footer {
-  background-color: #0f0f0f;
-  height: 50;
+  background-color: #000000;
+  color: #aaaaaa;
+  width: 100%;
+  height: auto;
+  position: flex;
+  text-align: center;
+  clear: both;
+  padding-top: 10px;
 }
 
-footer p {
-  padding: 10px;
-  color: #929292;
-  display: grid;
-  text-align: center;
+footer a {
+  color: inherit;
+  text-decoration: none;
 }
 
 h2 {
@@ -114,6 +115,8 @@ h2 {
 
 h3 {
   font-family: 'Titillium Web', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 p {
