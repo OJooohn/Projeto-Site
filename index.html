@@ -36,15 +36,12 @@ section {
   width: 80%;
   height: 2000px;
   float: left;
-
-  margin: 0px;
-  padding: 0px 0px 20px 0px;
 }
 
 section hr {
 	border: 1;
 	border-top: 1px solid #000000;
-  margin: 35px 10px 0px 10px;
+  margin: 20px 20px 0;
 }
 
 aside {
@@ -54,28 +51,37 @@ aside {
   height: 2000px;
   float: right;
 
-  margin: 0px;
-  padding: 0px 0px 20px 0px;
-
   border-left: 1px solid #000000;
+}
+
+.aside {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.game {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  position: relative;
+  height: 100%;
+  width: auto;
+  padding: 10px 15px 10px;
+  text-align: center;
+}
+
+.image img {
+  border-radius: 5px;
 }
 
 aside hr {
   border: 1;
 	border-top: 1px solid #000000;
-  margin: 20px 10px -10px 10px;
-}
-
-.center {
-  position: relative;
-  height: 300px;
-  width: 200px;
-  left: 50%;
-
-  padding: 1px;
-  margin-left: -100px;
-
-  text-align: center;
+  margin: 10px 10px 10px;
 }
 
 input {
@@ -99,7 +105,7 @@ input {
 }
 
 .navigation-bar .manual-btn {
-  border: 2px solid #ffffff92;
+  border: 2px solid #D03A65;
   
   width: 50px;
   padding: 7px;
@@ -113,7 +119,7 @@ input {
 }
 
 .manual-btn:hover {
-  background: #ffffff92;
+  background: #d03a6586;
   animation-name: myanimation;
   animation-duration: 0.5s;
   transition: 0.5s;
@@ -174,7 +180,7 @@ input {
 }
 
 .navigation-auto div {
-  border: 2px solid #ffffff92;
+  border: 2px solid #d03a6586;
 
   width: 50px;
   padding: 7px;
@@ -187,19 +193,19 @@ input {
 }
 
 #radio1:checked ~.navigation-auto .auto-btn1 {
-  background-color: #ffffff92;
+  background-color: #d03a6586;
 }
 
 #radio2:checked ~.navigation-auto .auto-btn2 {
-  background-color: #ffffff92;
+  background-color: #d03a6586;
 }
 
 #radio3:checked ~.navigation-auto .auto-btn3 {
-  background-color: #ffffff92;
+  background-color: #d03a6586;
 }
 
 #radio4:checked ~.navigation-auto .auto-btn4 {
-  background-color: #ffffff92;
+  background-color: #d03a6586;
 }
 
 #radio1:checked ~.slide .text1 {
@@ -285,6 +291,10 @@ input {
       
     </header>
 
+    <div>
+      
+    </div>
+
     <article>
 
       <div class="slider">
@@ -307,20 +317,21 @@ input {
 
             </div>
 
+            <div class="img-op"></div>
             <img src="./img/index/cs2.png" alt="counter strike 2">
 
           </div>
           
           <div class="slide">
-            <img src="./img/index/Cyberpunk.jpg" alt="cyberpunk 2077">
+            <img src="./img/index/Cyberpunk.jpg" alt="cyberpunk 2077" class="img-op">
           </div>
           
           <div class="slide">
-            <img src="./img/index/GTA6.jpg" alt="gta VI">
+            <img src="./img/index/GTA6.jpg" alt="gta VI" class="img-op">
           </div>
           
           <div class="slide">
-            <img src="./img/index/Xbox Vazamentos.jpg" alt="xbox leaks">
+            <img src="./img/index/Xbox Vazamentos.jpg" alt="xbox leaks" class="img-op">
           </div>
           
           <div class="navigation-auto">
@@ -474,46 +485,65 @@ input {
 
       <aside>
 
-        <div class="vl">
+        <div class="aside">
 
-          <h2 style="padding: 20px 20px 0px 20px;text-align: center;">Próximos lançamentos</h2>
-          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Spider Man 2</h3>
+          <h2 style="padding: 30px 10px 0px; text-align: center;">Próximos lançamentos</h2>
 
-            <div class="center">
-              <img src="./img/index/spiderman2.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-            </div>
+          <div class="game">
 
+              <div class="image">
+                <img src="./img/index/spiderman2.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+              </div>
+
+          </div>
+
+          <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">20 de outubro de 2023</p>
           <hr>
 
-          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Alan Wake 2</h3>
+          <div class="game">
 
-            <div class="center">
-              <img src="./img/index/alanwake.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-            </div>
+              <div class="image">
+                <img src="./img/index/alanwake.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+              </div>
+            
+          </div>
 
+          <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">27 de outubro de 2023</p>
           <hr>
 
-          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Little Nightmares III</h3>
+          <div class="game">
 
-            <div class="center">
-              <img src="./img/index/littlenightmares3.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-            </div>
+              <div class="image">
+                <img src="./img/index/littlenightmares3.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+              </div>
 
+          </div>
+
+          <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">Até dezembro de 2024</p>
           <hr>
 
-            <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Star Wars Outlaws</h3>
+          <div class="game">
 
-            <div class="center">
+            <div class="image">
               <img src="./img/index/starwars.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
             </div>
 
+          </div>
+
+          <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">Até dezembro de 2024</p>
           <hr>
 
-          <h3 style="padding: 20px 20px 0px 20px;text-align: center;"">Rise of the Ronin</h3>
+          <div class="game">
 
-            <div class="center">
-              <img src="./img/index/ronin.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-            </div>
+              <div class="image">
+                <img src="./img/index/ronin.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
+              </div>
+
+          </div>
+
+          <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">Até dezembro de 2024</p>
+
+          <hr>
 
         </div>
 
