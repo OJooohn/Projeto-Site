@@ -41,17 +41,23 @@ header {
 .banner-area h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  padding-top: 10%;
   font-size: 100px;
   color: #ffff;
   text-align: center;
+}
+
+.banner-area div {
+  left: 50%;
+  transform: translate(37%);
+  display: flex;
+  border-radius: 20px;
+
 }
 
 .op-side {
   background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(0,0,0,1) 100%);
 }
-
 
 .side-images {
   background-image: url(../img/esports/stadium.jpg);
@@ -73,7 +79,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(
   width: 80%;
   left: 50%;
   transform: translate(-50%);
-
 }
 
 .content-area .wrapper p, h2, .intro {
@@ -81,15 +86,15 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(
 }
 
 .container {
+  border-radius: 15px;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
+  
   width: 200px;
   height: 200px;
 }
 
 .image {
+  border-radius: 15px;
   width: 100%;
   height: auto;
 }
@@ -110,6 +115,58 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(
   opacity: 1;
 }
 
+.container1 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.image1 {
+  border-radius: 15px;
+  
+  width: 100%;
+  height: auto;
+}
+
+
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.back-text {
+  background-color: #171617;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  height: auto;
+}
+
+.back-text p {
+  margin-top: 10px;
+}
+
+.right-container {
+  position: relative;
+  height: 175px;
+}
+
+.right-container p {
+  padding-right: 0px;
+  width: auto;
+}
+
+hr {
+  border: 1;
+	border-top: 3px solid #fff;
+  margin-bottom: 35px;
+  margin-inline: 17px;
+}
+
+.left-container {
+  height: 200px;
+}
+
 </style>
 <main>
   <body>
@@ -121,7 +178,9 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(
     <div class="box-area">
 
       <div class="banner-area">
-        <h2>THE E-SPORTS</h2>
+        <div style="background-color: #00000077; width: fit-content; margin-top: 170px; padding: 10px 30px;">
+          <h2>THE E-SPORTS</h2>
+        </div>
       </div>
 
       <div class="content-area">
@@ -137,71 +196,115 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(
         </div>
         
         <div class="side-images">
+
           <div class="op-side">
 
             <div class="intro">
-              <h2 style="text-align: center; font-size: 50px;"> ESPORTS </h2>
-                <p>
-                    Os esportes eletrônicos, conhecidos como eSports, representam uma categoria esportiva que envolve competições estruturadas de videogames.
-                    Geralmente, tais competições são transmitidas pela internet, via plataformas de streaming, e atraem audiências de milhares de espectadores.
-                </p>
+              
+              <div class="back-text">
+                
+                <h2 style="text-align: center; font-size: 50px; color: #f8f6f7;"> ESPORTS </h2>
+                  <p style="color: #f8f6f7;">
+                      Os esportes eletrônicos, conhecidos como eSports, representam uma categoria esportiva que envolve competições estruturadas de videogames.
+                      Geralmente, tais competições são transmitidas pela internet, via plataformas de streaming, e atraem audiências de milhares de espectadores.
+                  </p>
+                
+              </div>
+
             </div>
+
               <div class="wrapper">
+
+                <hr>
+
                 <div class="content-game"">
                   
-    
-                <h2> Counter Strike </h2>
-                    <div class="container">
+                 
+
+                  <div class="back-text" style="color: #f8f6f7;">
+
+                    <h2 style="color: #f8f6f7; font-size: 33px;"> League of Legends </h2>
+
+                    <div class="left-container">
+
+                      <div class="container" style="display: flex; float: left;">
+      
+                          <img src="../img/esports/lol.jpg" class="image" style="width: 200px; height: 200px;">
+                          <div class="overlay">
+                              <img src="../img/esports/lo2.jpg" class="image" style="width: 200px; height: 200px;">
+                          </div>
+      
+                      </div>
+                        <p style="color: #f8f6f7; display: flex; padding-left: 20px; padding-top: 30px;">
+                            O universo dos esportes eletrônicos conta com um cenário extremamente sólido no que diz respeito ao League of Legends (LoL), que ostenta uma presença significativa em várias partes do mundo.
+                            A Riot Games estabeleceu um circuito extremamente bem estruturado, que inclui campeonatos regionais e mundiais, resultando em um ecossistema eficaz e em constante crescimento, que conquista um número crescente de fãs.
+                            Com ligas regionais e globais, equipes de alto nível e jogadores renomados internacionalmente, o cenário do LoL está em constante transformação e evolução.
+                        </p>
+
+                    </div>
+
+                  </div>
+
+                  <div class="back-text" style="color: #f8f6f7; height: 255px;">
+
+                    <div class="title-image"  style="width: 200px; height: 255px; float: right;">
+
+                      <h2 style="color: #f8f6f7; font-size: 33px;"> Counter Strike </h2>
                       
-                        <img src="../img/esports/csgo.jpg" class="image" style="width: 200px; height: 200px;">
-    
-                        <div class="overlay">
-                            <img src="../img/esports/cs2.jpg" class="image" style="width: 200px; height: 200px";>
+  
+                            <div class="container1" style="padding-top: 5px;">
+                              
+                                <img src="../img/esports/cs2.jpg" class="image1" style="width: 200px; height: 200px;">
+            
+                                <div class="overlay" style="padding-top: 5px;">
+                                    <img src="../img/esports/csgo.jpg" class="image1" style="width: 200px; height: 200px";>
+                                </div>
+                                
+                            </div>
+
+                    </div>
+                          
+                          <p style="color: #f8f6f7; padding-top: 80px; padding-right: 220px; text-align: right;">
+                              As competições profissionais de Counter-Strike representam alguns dos torneios de esportes eletrônicos mais renomados em todo o mundo.
+                              Nesses eventos, jogadores e organizações profissionais se enfrentam no popular jogo de tiro em primeira pessoa (FPS) publicado pela Valve.
+                              O título original, que surgiu em 1999, é uma modificação (mod) criada para o jogo Half-Life, também publicado pela mesma empresa.
+                              Atualmente, o capítulo mais recente da franquia, que se destaca nas competições, é o Counter-Strike: Global Offensive, lançado em 2012.
+                          </p>
+
+                  </div>
+
+                  <div class="back-text" style="color: #f8f6f7; height: 250px;">
+
+                    <div class="left-container">
+
+                      <h2 style="color: #f8f6f7; font-size: 33px;"> Rocket League </h2>
+          
+                        <div class="container" style="display: flex; float: left;">
+          
+                          <img src="../img/esports/rl.jpg" class="image" style="width: 200px; height: 200px;">
+                          <div class="overlay">
+                              <img src="../img/esports/rl2.jpg" class="image" style="width: 200px; height: 200px";>
+                          </div>
+          
                         </div>
-                        
+          
+                      <p style="color: #f8f6f7; display: flex; padding-left: 20px; padding-top: 30px;">
+                          O Rocket League Championship Series (RLCS) é um torneio anual do jogo eletrônico Rocket League realizado pela Psyonix, a desenvolvedora do jogo.
+                          Consiste em três divisões de qualificação online em várias regiões, com as equipes ganhando pontos para a qualificação para os torneios de meio de temporada e as finais do RLCS, ambos realizados como eventos LAN em todo o mundo.
+                      </p>
                     </div>
-                <p>
-                    As competições profissionais de Counter-Strike representam alguns dos torneios de esportes eletrônicos mais renomados em todo o mundo.
-                    Nesses eventos, jogadores e organizações profissionais se enfrentam no popular jogo de tiro em primeira pessoa (FPS) publicado pela Valve.
-                    O título original, que surgiu em 1999, é uma modificação (mod) criada para o jogo Half-Life, também publicado pela mesma empresa.
-                    Atualmente, o capítulo mais recente da franquia, que se destaca nas competições, é o Counter-Strike: Global Offensive, lançado em 2012.
-                </p>
-                <h2> League of Legends </h2>
-                    <div class="container">
-    
-                        <img src="../img/esports/lol.jpg" class="image" style="width: 200px; height: 200px;">
-                        <div class="overlay">
-                            <img src="../img/esports/lo2.jpg" class="image" style="width: 200px; height: 200px;">
-                        </div>
-    
-                    </div>
-                <p>
-                    O universo dos esportes eletrônicos conta com um cenário extremamente sólido no que diz respeito ao League of Legends (LoL), que ostenta uma presença significativa em várias partes do mundo.
-                    A Riot Games estabeleceu um circuito extremamente bem estruturado, que inclui campeonatos regionais e mundiais, resultando em um ecossistema eficaz e em constante crescimento, que conquista um número crescente de fãs.
-                    Com ligas regionais e globais, equipes de alto nível e jogadores renomados internacionalmente, o cenário do LoL está em constante transformação e evolução.
-                </p>
-                <h2> Rocket League </h2>
-    
-                  <div class="container">
-    
-                    <img src="../img/esports/rl.jpg" class="image" style="width: 200px; height: 200px;">
-                    <div class="overlay">
-                        <img src="../img/esports/rl2.jpg" class="image" style="width: 200px; height: 200px";>
-                    </div>
-    
+
+
                   </div>
     
-                <p>
-                    O Rocket League Championship Series (RLCS) é um torneio anual do jogo eletrônico Rocket League realizado pela Psyonix, a desenvolvedora do jogo.
-                    Consiste em três divisões de qualificação online em várias regiões, com as equipes ganhando pontos para a qualificação para os torneios de meio de temporada e as finais do RLCS, ambos realizados como eventos LAN em todo o mundo.
-                </p>
                 </div>
                 
               </div>
           </div>
-          </div>
 
-        <footer id="rodape">
+        </div>
+
+        <footer>
           <p>&copy; 2023 - Todos os direitos reservados</p>
           <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
             <ul>
@@ -210,6 +313,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(
               <li><a href="#"><p>Sobre nós</p></a></li>
             </ul>
         </footer>
+
       </div>
 
     </div>
