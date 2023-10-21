@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&family=Titillium+Web:wght@200;400&display=swap');
 
 * {
   padding: 0;
@@ -25,7 +26,6 @@ html {
 header {
   background-color: #1A181A;
   height: 50px;
-  display: grid;
   padding: 10px;
 }
 
@@ -129,19 +129,20 @@ p {
 }
 
 ::-webkit-scrollbar {
+  display: none;
   width: 17px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-track {
- background: #000000;
+ background: #1a181a;
  border-top: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
  background: #2e2e2e;
  border-radius: 10px;
- border: .2em solid #000000;
+ border: .2em solid #1a181a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
