@@ -3,230 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/historia.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Void News</title>
   <link rel="icon" href="../img/index/void.png">
 </head>
 <style>
-    section {
-    background-color:rgb(255, 255, 255);
-    padding: 20px;
-    text-align: center;
-  }
-    
-  section h2 {
-    font-family: 'Titillium Web', sans-serif;
-  }
-    
-  section p {
-    font-family: 'Work Sans', sans-serif;
-    margin-bottom: 10px;
-  }
-
-  footer {
-	  background-color: #000000;
-	  color: #aaaaaa;
-	  padding: 20px;
-	  text-align: center;
-	  margin-top: 100px;
-    border-top: 2px solid rgb(102, 102, 102);
-  }
-    
-  article{
-    background-color: silver;
-    padding: 20px;
-    text-align: right;
-  }
-  .p {
-    padding: 90px;
-    border: 1px solid #4CAF50;
-  }
-    
-  a {
-    color: white;
-    text-decoration: none;
-  }
-    
-  a:hover {
-    color: white;
-  }
-
-  .bar {
-    padding-left: 200px;
-  }
-
-  .barl {
-    padding-right: 200px;
-  }
-      
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-    
-  img.face{
-    float: left;
-    border: transparent thin solid;
-    padding: 5px;
-    margin: 0px 10px 10px 0;
-    max-width: 186px;
-  }
-
-  hr {
-    border: 1;
-    border-top: 1px solid #000000;
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-
-  .border {
-    background: #ffffff;
-    padding-top: 0px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 0px;
-  }
-
-.container p {
-  position: absolute;
-  margin-top: -250px;
-  margin-left: 300px;
-  bottom: 22%;
-  left: 50px;
-  color: white;
-  font-family: poppins;
-  font-size: 50px;
+header {
+  width: 100%;
+  position: fixed;
+  height: 50px;
 }
 
-.container {
-  display: grid;
+.side-images {
+  background-image: url(../img/historia/fliperama.png);
+  background-size: contain;
+  background-position: center center;
+}
+
+.op-side {
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255, 255, 255, 0.385) 50%, rgba(0,0,0,1) 100%);
+}
+
+.banner-area {
+  background-image: url(../img/historia/controle-nintendo.jpg);
+  background-size: cover;
+  background-position: center center;
+  top: 70px;
+  height: 560px;
   width: 100%;
+  position: fixed;
+
+}
+
+.banner-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 100%);
+}
+
+.banner-area h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: #ffff;
+  text-align: center;
+}
+
+.content-area {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 590px;
+}
+
+.content-area .wrapper , .intro{
+  padding: 10px 15px;
+  background-color: #000000aa;
+  position: relative;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.content-area .wrapper p, h2, .intro {
+  color: #ffff;
+}
+
+.back-text {
+  background-color: #171617;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
   height: auto;
 }
 
-.container img {
-  display: flex;
-  width: 100%;
-  height: 100%;
+.back-text p {
+  margin-top: 10px;
 }
 
+hr {
+  border: 1;
+	border-top: 3px solid #fff;
+  margin-bottom: 35px;
+  margin-inline: 17px;
+}
+
+.border p {
+  padding-left: 220px;
+}
+
+.banner-area div {
+  left: 50%;
+  transform: translate(10%);
+  display: flex;
+  border-radius: 20px;
+}
 </style>
 <main>
   <body>
-    <div id="container">
-      <header>
-        <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
-      </header>
-    <div class="container">
-        <img src="../img/historia/controle-nintendo2.jpg" alt="Controle de nintendo.">
-        <p><strong>Controle de Nintendo(NES)</p>
+    <header>
+      <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
+    </header>
+
+    <div class="box-area">
+
+      <div class="banner-area">
+        <div style="background-color: #00000077; width: fit-content; margin-top: 170px; padding: 10px 30px;">
+          <h2>HISTÓRIA DOS JOGOS</h2>
+        </div>
+      </div>
+
+      <div class="content-area">
+        <div class="navigation" style="margin: 0;">
+          <nav>
+            <ul>
+              <li><a href="esports.html"><p>E-SPORTS</p></a></li>
+              <li><a href="historia.html"><p>HISTÓRIA</p></a></li>
+              <li><a href="thegoats.html"><p>THE GOATS</p></a></li>
+              <li><a href="recordes.html"><p>RECORDES</p></a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div class="side-images">
+
+          <div class="op-side">
+
+            <!--  <div class="intro">
+              
+              <div class="back-text">
+                
+                <h2 style="text-align: center; font-size: 50px; color: #f8f6f7;"> HISTÓRIA DOS JOGOS </h2>
+                  
+
+                
+              </div>
+              
+              Caso queira um título colocar aqui
+              
+            </div> -->
+            
+            <div class="wrapper">
+
+              <!-- <hr> -->
+              
+              <div class="content-game">
+                
+                <div class="back-text" style="color: #f8f6f7; height: 500px;">
+
+                  <h2 style="padding-left: 10px; width: fit-content;">Super Mario Bross</h2>
+                  <div class="border">
+                    <div class="image" style="padding-top: 20px; width: fit-content; display: flex; float: left;">
+                      <img src="../img/historia/supermario.jpg" style="width: 200px; border-radius: 15px;">
+                    </div>
+                    <p>"Super Mario Bros.", lançado pela Nintendo em 1985 para o console Nintendo Entertainment System (NES), é amplamente considerado um dos jogos mais icônicos e influentes da história dos videogames. Este título revolucionário foi criado por Shigeru Miyamoto e Takashi Tezuka, apresentando os carismáticos personagens Mario e Luigi em uma emocionante jornada para resgatar a Princesa Peach das garras do vilão Bowser. O jogo é conhecido por sua jogabilidade inovadora e design criativo de níveis, que cativaram os jogadores e definiram os padrões para o gênero de plataforma.</p>
+                    <p>A essência da jogabilidade de "Super Mario Bros." é uma mistura perfeita de simplicidade e desafio, com controles intuitivos que permitem uma exploração imersiva no mundo dos cogumelos. Ao longo dos níveis meticulosamente projetados, Mario enfrenta uma variedade de inimigos, coleta moedas e power-ups transformadores, como o icônico cogumelo que o faz crescer. Cada mundo apresenta uma atmosfera única e desafios distintos, proporcionando uma experiência rica e diversificada para os jogadores.</p>
+                  </div>
+                    <p style="padding-left: 5px; display: flex; float: right;">Os níveis intricadamente elaborados de "Super Mario Bros." são uma verdadeira obra de arte, introduzindo progressivamente novos elementos e obstáculos para manter os jogadores totalmente imersos. A diversidade e originalidade dos cenários, desde as icônicas tubulações até os castelos assombrados, oferecem um deleite visual constante. Este jogo inovador redefiniu os padrões para os jogos de plataforma e estabeleceu uma fórmula que seria emulada e aprimorada por muitas gerações de jogos subsequentes.</p>
+                    <p style="padding-left: 5px; display: flex; float: right;">Além de sua influência na jogabilidade, "Super Mario Bros." alcançou um status lendário na cultura pop. Mario se tornou uma verdadeira sensação global e um símbolo da indústria dos videogames. A trilha sonora cativante, composta por Koji Kondo, é uma melodia reconhecível instantaneamente, ressoando na mente de incontáveis fãs. A franquia Mario continua a prosperar, com uma vasta gama de sequências e adaptações, assegurando que a magia e o legado do Super Mario persistam e inspirem gerações de jogadores.</p>
+
+                </div>
+
+                <div class="back-text" style="color: #f8f6f7; height: 500px;">
+
+                  <div class="border">
+                    <h2 style="padding-left: 10px; width: fit-content;">Tetris</h2>
+                    <div class="image" style="padding-top: 20px; width: fit-content; display: flex; float: left;">
+                      <img src="../img/historia/tetris.png" style="width: 200px; border-radius: 15px;">
+                    </div>
+                    <p>"Tetris", criado pelo designer russo Alexey Pajitnov e lançado em 1984, é uma lenda dos videogames que deixou uma marca indelével na história da indústria. Esse quebra-cabeça eletrônico desafia os jogadores a encaixar peças tetriminos, que caem do topo da tela, em uma grade, formando linhas completas para ganhar pontos e liberar espaço. A simplicidade e a profundidade estratégica do jogo o tornam cativante para jogadores de todas as idades, e sua jogabilidade envolvente é um exemplo perfeito de como a simplicidade pode gerar um vício duradouro.</p>
+                    <p>A mecânica de "Tetris" é fácil de entender, mas difícil de dominar. À medida que a velocidade das peças aumenta, a pressão para encaixá-las adequadamente também cresce, exigindo rapidez e raciocínio estratégico. O jogo desafia a mente e os reflexos, mantendo os jogadores em um estado de concentração total enquanto tentam alcançar a melhor pontuação possível. Existem técnicas dentro do tetris que os jogadores estudam e aperfeiçoam com o tempo, fazendo-os mais rápidos constantemente.</p>
+                  </div>
+                  <p style="padding-left: 5px; display: flex; float: right;">Os blocos simples e os visuais minimalistas de "Tetris" são uma escolha deliberada que se mostrou brilhante. Eles contribuem para a acessibilidade e a intemporalidade do jogo, garantindo que a diversão pura e a emoção da resolução de quebra-cabeças permaneçam inalteradas ao longo das décadas. A trilha sonora marcante também desempenha um papel vital, adicionando à experiência e se tornando uma parte intrínseca da identidade do jogo.</p>
+                  <p style="padding-left: 5px; display: flex; float: right;">A influência de "Tetris" se estende para além do universo dos videogames, impactando a cultura pop de maneiras inimagináveis. O jogo foi lançado em várias plataformas e inspirou incontáveis sequências, variações e remakes, mantendo-se como uma força vital na indústria de jogos. Sua simplicidade e eficácia em fornecer uma experiência de jogo gratificante e desafiadora continuam atraindo jogadores novos e antigos, garantindo que "Tetris" permaneça como uma das maiores conquistas no mundo dos videogames.</p>
+                </div>
+
+                <div class="back-text" style="color: #f8f6f7;">
+
+                  <h2 style="padding-left: 10px; width: fit-content;">Minecraft</h2>
+                  <div class="border">
+                    <div class="image" style="padding-top: 0px; width: fit-content; display: flex; float: left;">
+                      <img align="left" src="../img/historia/minecraft.png" style="width: 200px; border-radius: 15px;">
+                    </div>
+                    <p>O visual distinto de "Minecraft", caracterizado pelos gráficos em estilo de blocos, tornou-se um ícone por si só. Apesar de sua</p>
+                    <p>aparente simplicidade, este estilo gráfico permite uma expressão criativa ilimitada e é parte integrante da identidade do jogo. A música e os efeitos sonoros relaxantes acentuam a atmosfera única do jogo, mergulhando os jogadores em um mundo de descoberta e criatividade.</p>
+                    <p>"Minecraft" transcendeu os limites do mundo dos videogames, expandindo-se para a cultura pop de forma impressionante. Tornou-se uma ferramenta educacional valiosa, sendo utilizada em escolas para ensinar diversas disciplinas. A comunidade de jogadores, com suas criações incríveis e modificações personalizadas, contribuiu para a longevidade e vitalidade contínua do jogo.</p>
+                  </div>
+                  <p style="padding-left: 5px; padding-top: 15px;">Essa longevidade é um testemunho do impacto duradouro. "Minecraft", um fenômeno global criado por Markus Persson e lançado em 2011 pela Mojang, é um dos jogos mais influentes e amados da história dos videogames. Este título de sandbox permite que os jogadores explorem, construam e criem em um vasto mundo gerado proceduralmente, composto por blocos tridimensionais. A essência do jogo reside na liberdade criativa que oferece, permitindo que os jogadores moldem seu próprio destino em um ambiente virtual expansivo.</p>
+                  <p style="padding-left: 5px;">A jogabilidade de "Minecraft" é diversificada e cativante. Os jogadores começam com poucos recursos e precisam coletar materiais de seu ambiente para criar ferramentas, construir abrigos e explorar terras desconhecidas. A possibilidade de jogar em diferentes modos, como o criativo, onde os recursos são ilimitados, ou o sobrevivência, onde é preciso gerenciar saúde e enfrentar inimigos, oferece uma experiência personalizada para cada jogador.
+                    que "Minecraft" teve na indústria de jogos e no mundo. Com uma base de fãs apaixonada e em constante crescimento, o jogo continua a evoluir, mantendo sua posição como uma das experiências de jogo mais influentes e apreciadas de todos os tempos.</p>
+                </div>
+
+              </div>
+
+
+                 
+                
+              </div>
+          </div>
+
+        </div>
+
+        <footer>
+          <p>&copy; 2023 - Todos os direitos reservados</p>
+          <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
+            <ul>
+              <li><a href="#"><p>Termos de uso</p></a></li>
+              <li><a href="#"><p>Política de privacidade</p></a></li>
+              <li><a href="#"><p>Sobre nós</p></a></li>
+            </ul>
+        </footer>
+
+      </div>
+
     </div>
-    <nav>
-        <ul>
-            <li><a href="esports.html"><p>E-SPORTS</p></a></li>
-            <li><a href="historia.html"><p>HISTÓRIA</p></a></li>
-            <li><a href="thegoats.html"><p>EVOLUÇÃO</p></a></li>
-            <li><a href="recordes.html"><p>RECORDES</p></a></li>
-        </ul>
-    </nav>
-
-    <h2 style = 'font-size:50px' class="align"> História dos Jogos</h2>
-    <section>
-      <h2>Super Mario Bross</h2>
-      <div class="border" align="left">
-        <img align="left" src="../img/historia/supermario.jpg" width="15%">
-        <p class="bar">"Super Mario Bros.", lançado pela Nintendo em 1985 para o console Nintendo Entertainment System (NES), é amplamente considerado um dos jogos mais icônicos e influentes da história dos videogames. Este título revolucionário foi criado por Shigeru Miyamoto e Takashi Tezuka, apresentando os carismáticos personagens Mario e Luigi em uma emocionante jornada para resgatar a Princesa Peach das garras do vilão Bowser. O jogo é conhecido por sua jogabilidade inovadora e design criativo de níveis, que cativaram os jogadores e definiram os padrões para o gênero de plataforma.</p>
-        <p class="bar">A essência da jogabilidade de "Super Mario Bros." é uma mistura perfeita de simplicidade e desafio, com controles intuitivos que permitem uma exploração imersiva no mundo dos cogumelos. Ao longo dos níveis meticulosamente projetados, Mario enfrenta uma variedade de inimigos, coleta moedas e power-ups transformadores, como o icônico cogumelo que o faz crescer. Cada mundo apresenta uma atmosfera única e desafios distintos, proporcionando uma experiência rica e diversificada para os jogadores.</p>
-        <p>Os níveis intricadamente elaborados de "Super Mario Bros." são uma verdadeira obra de arte, introduzindo progressivamente novos elementos e obstáculos para manter os jogadores totalmente imersos. A diversidade e originalidade dos cenários, desde as icônicas tubulações até os castelos assombrados, oferecem um deleite visual constante. Este jogo inovador redefiniu os padrões para os jogos de plataforma e estabeleceu uma fórmula que seria emulada e aprimorada por muitas gerações de jogos subsequentes.</p>
-        <p>Além de sua influência na jogabilidade, "Super Mario Bros." alcançou um status lendário na cultura pop. Mario se tornou uma verdadeira sensação global e um símbolo da indústria dos videogames. A trilha sonora cativante, composta por Koji Kondo, é uma melodia reconhecível instantaneamente, ressoando na mente de incontáveis fãs. A franquia Mario continua a prosperar, com uma vasta gama de sequências e adaptações, assegurando que a magia e o legado do Super Mario persistam e inspirem gerações de jogadores.</p>
-      </div>
-    </section>
-
-      <hr>
-
-    <section>
-      <h2>Tetris</h2>
-      <div class="border" align="right">
-        <img align="right" src="../img/historia/tetris.png" width="15%">
-        <p class="barl">"Tetris", criado pelo designer russo Alexey Pajitnov e lançado em 1984, é uma lenda dos videogames que deixou uma marca indelével na história da indústria. Esse quebra-cabeça eletrônico desafia os jogadores a encaixar peças tetriminos, que caem do topo da tela, em uma grade, formando linhas completas para ganhar pontos e liberar espaço. A simplicidade e a profundidade estratégica do jogo o tornam cativante para jogadores de todas as idades, e sua jogabilidade envolvente é um exemplo perfeito de como a simplicidade pode gerar um vício duradouro.</p>
-        <p class="barl">A mecânica de "Tetris" é fácil de entender, mas difícil de dominar. À medida que a velocidade das peças aumenta, a pressão para encaixá-las adequadamente também cresce, exigindo rapidez e raciocínio estratégico. O jogo desafia a mente e os reflexos, mantendo os jogadores em um estado de concentração total enquanto tentam alcançar a melhor pontuação possível. Existem técnicas dentro do tetris que os jogadores estudam e aperfeiçoam com o tempo, fazendo-os mais rápidos constantemente.</p>
-        <p>Os blocos simples e os visuais minimalistas de "Tetris" são uma escolha deliberada que se mostrou brilhante. Eles contribuem para a acessibilidade e a intemporalidade do jogo, garantindo que a diversão pura e a emoção da resolução de quebra-cabeças permaneçam inalteradas ao longo das décadas. A trilha sonora marcante também desempenha um papel vital, adicionando à experiência e se tornando uma parte intrínseca da identidade do jogo.</p>
-        <p>A influência de "Tetris" se estende para além do universo dos videogames, impactando a cultura pop de maneiras inimagináveis. O jogo foi lançado em várias plataformas e inspirou incontáveis sequências, variações e remakes, mantendo-se como uma força vital na indústria de jogos. Sua simplicidade e eficácia em fornecer uma experiência de jogo gratificante e desafiadora continuam atraindo jogadores novos e antigos, garantindo que "Tetris" permaneça como uma das maiores conquistas no mundo dos videogames.</p>
-      </div>
-    </section>
-
-    <hr>
-
-    <section>
-      <h2>Minecraft</h2>
-      <div class="border" align="left">
-        <img align="left" src="../img/historia/minecraft.png" width="15%">
-        <p class="bar">"Minecraft", um fenômeno global criado por Markus Persson e lançado em 2011 pela Mojang, é um dos jogos mais influentes e amados da história dos videogames. Este título de sandbox permite que os jogadores explorem, construam e criem em um vasto mundo gerado proceduralmente, composto por blocos tridimensionais. A essência do jogo reside na liberdade criativa que oferece, permitindo que os jogadores moldem seu próprio destino em um ambiente virtual expansivo.</p>
-        <p class="bar">A jogabilidade de "Minecraft" é diversificada e cativante. Os jogadores começam com poucos recursos e precisam coletar materiais de seu ambiente para criar ferramentas, construir abrigos e explorar terras desconhecidas. A possibilidade de jogar em diferentes modos, como o criativo, onde os recursos são ilimitados, ou o sobrevivência, onde é preciso gerenciar saúde e enfrentar inimigos, oferece uma experiência personalizada para cada jogador.</p>
-        <p class="bar">O visual distinto de "Minecraft", caracterizado pelos gráficos em estilo de blocos, tornou-se um ícone por si só. Apesar de sua</p>
-        <p>aparente simplicidade, este estilo gráfico permite uma expressão criativa ilimitada e é parte integrante da identidade do jogo. A música e os efeitos sonoros relaxantes acentuam a atmosfera única do jogo, mergulhando os jogadores em um mundo de descoberta e criatividade.</p>
-        <p>"Minecraft" transcendeu os limites do mundo dos videogames, expandindo-se para a cultura pop de forma impressionante. Tornou-se uma ferramenta educacional valiosa, sendo utilizada em escolas para ensinar diversas disciplinas. A comunidade de jogadores, com suas criações incríveis e modificações personalizadas, contribuiu para a longevidade e vitalidade contínua do jogo.</p>
-        <p>Essa longevidade é um testemunho do impacto duradouro que "Minecraft" teve na indústria de jogos e no mundo. Com uma base de fãs apaixonada e em constante crescimento, o jogo continua a evoluir, mantendo sua posição como uma das experiências de jogo mais influentes e apreciadas de todos os tempos.</p>
-      </div>
-
-    </section>
-
-    <hr>
-
-    <section>
-      <h2>Pac-Man</h2>
-      <div class="border" align="right">
-        <img align="right" src="../img/historia/pacman.png" width="15%">
-        <p class="barl">"Pac-Man", um ícone da cultura pop e dos videogames, foi lançado pela Namco em 1980. Desenvolvido por Toru Iwatani, o jogo apresenta um personagem redondo e amarelo chamado Pac-Man, cuja missão é percorrer um labirinto e comer todas as pílulas enquanto é perseguido por fantasmas. Esta mecânica simples, mas desafiadora, cativou jogadores de todas as idades e estabeleceu os alicerces para um gênero de jogos completamente novo.</p>
-        <p class="barl">A jogabilidade de "Pac-Man" é intuitiva e viciante. Os jogadores precisam evitar serem capturados pelos fantasmas, enquanto tentam limpar o labirinto das pílulas. Além das pílulas regulares, os jogadores podem comer as "superpílulas" nos cantos do labirinto, que tornam os fantasmas temporariamente vulneráveis, permitindo que Pac-Man os coma para ganhar pontos extras.</p>
-        <p class="barl">A estética colorida e amigável de "Pac-Man" tornou-o acessível para jogadores de todas as idades. Os gráficos simples, mas distintos, e a música cativante contribuíram para a identidade única do jogo. O personagem Pac-Man se tornou um ícone, sendo um dos primeiros</p>
-        <p>personagens de videogame a alcançar reconhecimento global.</p>
-        <p>"Pac-Man" desempenhou um papel crucial no estabelecimento da cultura dos videogames, tornando-se uma parte essencial da história da indústria. Inspirou inúmeras sequências, adaptações e spin-offs, e o personagem Pac-Man tornou-se um mascote duradouro da Namco. Até hoje, é frequentemente referenciado em diversos meios de comunicação, garantindo que seu legado permaneça vivo e relevante na cultura contemporânea.</p>
-      </div>
-  </section>
-
-  <hr>
-
-  <section>
-    <h2>Grand Theft Auto V</h2>
-    <div class="border" align="left">
-      <img align="left" src="../img/historia/gtav.jpg" width="15%">
-      <p class="bar">"Grand Theft Auto V" (GTA V), lançado pela Rockstar Games em 2013, é um dos títulos mais ambiciosos e bem-sucedidos da série "Grand Theft Auto". Este jogo de ação em mundo aberto se passa na fictícia cidade de Los Santos, e seus arredores, proporcionando uma experiência imersiva que mistura narrativa complexa, jogabilidade envolvente e um vasto mundo para explorar.</p>
-      <p class="bar">A jogabilidade de "GTA V" oferece uma variedade de atividades, desde missões da história principal até opções de lazer, como corridas, esportes e atividades criminosas. Os jogadores podem alternar entre três protagonistas jogáveis, cada um com sua própria história e habilidades únicas, permitindo uma perspectiva multifacetada na trama.</p>
-      <p class="bar">A narrativa é um dos pontos altos do jogo, com uma trama intrincada que mergulha na vida de três criminosos, Michael, Franklin e Trevor. Suas histórias entrelaçadas proporcionam uma visão envolvente do submundo criminal, política e corrupção na cidade de Los Santos. A escrita afiada e os personagens bem desenvolvidos cativam os jogadores, mantendo-os investidos na progressão da história.</p>
-      <p>O ambiente expansivo e detalhado de "GTA V" é uma das conquistas notáveis do jogo. Los Santos é recriada com notável fidelidade, oferecendo uma vasta gama de ambientes, desde a cidade movimentada até áreas rurais e praias pitorescas. Os gráficos deslumbrantes e a trilha sonora eclética complementam a experiência, criando uma atmosfera rica e autêntica.</p>
-      <p>Além do modo de história, "GTA V" possui um modo online, o "GTA Online", que permite aos jogadores colaborarem ou competirem em uma variedade de atividades em um ambiente online persistente. Isso expande a experiência do jogo, proporcionando uma grande comunidade e inúmeras horas de jogabilidade adicional.</p>
-      <p>Em resumo, "Grand Theft Auto V" é um marco na indústria de jogos, redefinindo os limites do que é possível em um mundo virtual. Sua narrativa arrebatadora, jogabilidade diversificada e ambiente vasto garantiram sua duradoura popularidade e posição como um dos jogos mais bem-sucedidos de todos os tempos.</p>
-    </div>
-
-  </section>
-
-  <hr>
-
-  <section>
-    <h2>League of Legends</h2>
-    <div class="border" align="right">
-      <img align="right" src="../img/historia/lol.jpg" width="15%">
-      <p class="barl">"League of Legends" (LoL), lançado em 2009 pela Riot Games, é um dos jogos mais influentes e populares do gênero MOBA (Multiplayer Online Battle Arena). Este título inovador cativou milhões de jogadores ao redor do mundo, oferecendo uma experiência de jogo estratégica e competitiva que exige trabalho em equipe e habilidade individual.</p>
-      <p class="barl">A jogabilidade de "League of Legends" se desenrola em uma arena onde duas equipes de campeões, cada uma com habilidades únicas, batalham para destruir a base inimiga. Os jogadores precisam colaborar, coordenar estratégias e escolher sabiamente suas habilidades para garantir a vitória. A profundidade tática e a evolução constante do jogo, com a introdução de novos campeões e atualizações, mantêm os jogadores engajados e voltando para mais.</p>
-      <p class="barl">A cena competitiva de "League of Legends" é uma das mais proeminentes nos esportes eletrônicos, com torneios de grande prestígio e milhões de espectadores em todo o mundo. As ligas profissionais e os campeonatos atraem os melhores jogadores, equipes e organizações, impulsionando a visibilidade e a legitimidade dos esportes eletrônicos.</p>
-      <p>Os visuais vibrantes e detalhados de "League of Legends" são um deleite para os jogadores. Os gráficos e as animações dos campeões, aliados a um vasto leque de skins, contribuem para a riqueza visual e a expressão criativa dentro do jogo. A trilha sonora envolvente e os efeitos sonoros dão vida ao universo do LoL, aprimorando a atmosfera competitiva e imersiva.</p>
-      <p>Além da competição, "League of Legends" também é um fenômeno cultural. A comunidade de jogadores é enorme e ativa, com uma abundância de conteúdo criado por fãs, incluindo arte, música e histórias baseadas no universo do jogo. Riot Games também expandiu o universo de LoL com produtos relacionados, como histórias em quadrinhos, animações e até um jogo de tática autochamado "Teamfight Tactics".</p>
-      <p>Em resumo, "League of Legends" transcendeu os limites dos videogames e se tornou um fenômeno cultural, influenciando a indústria de jogos e os esportes eletrônicos de maneiras profundas e duradouras. Sua jogabilidade envolvente, cenário competitivo emocionante e impacto cultural contínuo cimentam sua posição como um dos jogos mais marcantes da última década.</p>
-    </div>
-</section>
-
-<footer>
-  <p>&copy; 2023 - Todos os direitos reservados</p>
-  <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
-    <ul>
-      <li><a href="#"><p>Termos de uso</p></a></li>
-      <li><a href="#"><p>Política de privacidade</p></a></li>
-      <li><a href="#"><p>Sobre nós</p></a></li>
-    </ul>
-</footer>
   </body>
 </main>
 </html>
