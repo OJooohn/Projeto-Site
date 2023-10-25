@@ -12,3 +12,15 @@ function nextImage(){
   document.getElementById("radio"+count).checked = true;
   
 }
+
+const signIN = document.getElementById('sign-in-btn');
+
+signIN.addEventListener('click', () =>{
+  const form = document.getElementById('form');
+
+  if(form.style.display === 'none'){
+    form.style.display = 'flex';
+  } else {
+    form.style.display = 'none';
+  }
+})

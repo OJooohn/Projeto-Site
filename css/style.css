@@ -24,9 +24,24 @@ html {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: #1A181A;
   height: 50px;
-  padding: 10px;
+  padding: 10px 20px;
+}
+
+.login-content {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-content hr {
+  height: 90%;
+  border: 1;
+	border-right: 1px solid #ffffff;
 }
 
 header h1 {
@@ -34,6 +49,14 @@ header h1 {
   padding-top: 5px;
   font-family: 'Orbitron', sans-serif;
   color: #fff;
+}
+
+header button {
+  background-color: #00000000;
+  color: #fff;
+  font-family: 'Work Sans';
+  font-weight: lighter;
+  font-size: 1.3rem;
 }
 
 header a {
@@ -47,7 +70,6 @@ header a {
 header img {
   max-height: 50px;
   width: auto;
-  display: flex;
 }
 
 nav {
