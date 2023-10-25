@@ -91,7 +91,7 @@ nav a::after {
   width: 0;
   left: 0;
   bottom: -2px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   border-radius: 1px;
 }
 
