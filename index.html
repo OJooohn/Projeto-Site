@@ -8,12 +8,12 @@
   <link rel="icon" href="./img/index/void.png">
 </head>
 <style>
-  :root {
-    --navigation-btn: #fff;
-  }
+:root {
+  --navigation-btn: #fff;
+}
 
 article {
-  height: 760px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,64 +27,18 @@ article a {
 article h2 {
   color: #fd000000;
 
-  font-size: 50px;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
   margin-top: 450px;
   margin-left: 30px;
   position: absolute;
 }
 
-section {
-  background-color: #cacaca;
-
-  width: 80%;
-  height: 2000px;
-  float: left;
-}
-
-section hr {
-	border: 1;
-	border-top: 1px solid #000000;
-  margin: 20px 20px 0;
-}
-
-aside {
-  background-color: #cacaca;
-
-  width: 19.91%;
-  height: 2000px;
-  float: right;
-
-  border-left: 1px solid #000000;
-}
-
-.aside {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.game {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.image {
-  position: relative;
-  height: 100%;
-  width: auto;
-  padding: 10px 15px 10px;
-  text-align: center;
-}
-
-.image img {
-  border-radius: 5px;
-}
-
-aside hr {
-  border: 1;
-	border-top: 1px solid #000000;
-  margin: 10px 10px 10px;
+article p {
+  font-size: 1.5rem;
+  letter-spacing: -0.22px;
+  font-weight: 200;
+  margin: 0 0 0 30px;
 }
 
 input {
@@ -93,7 +47,7 @@ input {
 
 .slider {
   width: 100%;
-  height: 760px;
+  height: 600px;
   overflow: hidden;
   position: absolute;
 }
@@ -316,9 +270,95 @@ input {
 
 .slide4 {
   display: flex;
-  background-image: url(./img/index/Xbox\ Vazamentos.jpg);
+  background-image: url(./img/index/Microsoft.png);
   background-size: cover;
   background-position: center center;
+}
+
+.section-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.616) 0%, rgba(23,22,23,1) 0%, rgba(33,33,37,1) 100%);
+}
+
+.news-content, .games-releases {
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #d5d5d5fe;
+}
+
+.news-content {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.games-releases {
+  display: flex;
+  padding-bottom: 35px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.news-content h2 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  padding: 5px 15px;
+}
+
+.news-content p {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.3px;
+
+  width: 95%;
+  padding: 0 25px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.news-content hr {
+  border: 1;
+  border-bottom: 2px solid #000000;
+
+  width: 97%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.game {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.game p {
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #00000098;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.game-img img{
+  box-shadow: 10px 10px 5px #00000085;
+  border-radius: 10px;
+  min-height: 300px;
+  max-width: 200px;
+}
+
+.game .game-img {
+  transition: 500ms ease;
+}
+
+.game .game-img:hover {
+  transform: scale(1.05);
 }
 
 </style>
@@ -355,14 +395,14 @@ input {
             
             <div class="backgroud-text">
               
-              <h2 class="text text1 fade"><a href="#noticia1" style="margin-left: 10px;">Counter Strike 2<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Atualização da engine trás novidades ao jogo</p></a></h2>
-              <h2 class="text text2 fade"><a href="#noticia2" style="margin-left: 10px;">Cyberpunk 2077<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Nova DLC chega ao jogo com uma nova história</p></a></h2>
-              <h2 class="text text3 fade"><a href="#noticia3" style="margin-left: 10px;">GTA VI<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Grande vazamento traz muitas novidades ao universo do jogo</p></a></h2>
-              <h2 class="text text4 fade"><a href="#noticia4" style="margin-left: 10px;">Xbox<p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Maior vazamento de dados da história</p></a></h2>
+              <h2 class="text text1 fade"><a href="#noticia1" style="margin-left: 10px;">Counter Strike 2<br><p>Atualização da engine trás novidades ao jogo</p></a></h2>
+              <h2 class="text text2 fade"><a href="#noticia2" style="margin-left: 10px;">Cyberpunk 2077<br><p>Nova DLC chega ao jogo com uma nova história</p></a></h2>
+              <h2 class="text text3 fade"><a href="#noticia3" style="margin-left: 10px;">GTA VI<br><p>Grande vazamento traz muitas novidades ao universo do jogo</p></a></h2>
+              <h2 class="text text4 fade"><a href="#noticia4" style="margin-left: 10px;">Xbox<p>Maior vazamento de dados da história</p></a></h2>
               
             </div>
             
-            
+            <div style="background-color: #000000; opacity: .5;"></div>
             
           </div>
           
@@ -408,24 +448,23 @@ input {
 
       </nav>
 
-        <section>
+      <section class="section-content">
+        <section class="news-content">
+          <h2 id="teste">Mundo dos Games</h2>
+          <p>
 
-            <h2 id="teste" style="padding: 25px 0px 0px 25px; font-size: 33px;">Mundo dos Games</h2>
-            <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+            Para você que não está familiarizado com os games, aqui você irá ver o tamanho desse universo que vaga pela Internet!
+            Então se aconchegue e desfrute de todos os detalhese notícias atuais dos games.
+            <br>
+            <br>
+            Neste amplo universo que vai desde jogos de mesa, até os mais tecnólogicos VRs (Virtual Reality), você encontra de tudo
+            dos jogos mais simples (Indies) até os maiores (AAA), todos tem seus propósitos de passar uma visão de uma narrativa do jogo
 
-              Para você que não está familiarizado com os games, aqui você irá ver o tamanho desse universo que vaga pela Internet!
-              Então se aconchegue e desfrute de todos os detalhese notícias atuais dos games.
-              <br>
-              <br>
-              Neste amplo universo que vai desde jogos de mesa, até os mais tecnólogicos VRs (Virtual Reality), você encontra de tudo
-              dos jogos mais simples (Indies) até os maiores (AAA), todos tem seus propósitos de passar uma visão de uma narrativa do jogo
+          </p>
+          <hr>
 
-            </p>
-
-            <hr>
-
-            <h2 id="noticia1" style="padding: 25px 0px 0px 25px; font-size: 33px;">Counter Strike 2 Lançamento</h2>
-            <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+          <h2 id="noticia1">Counter Strike 2 Lançamento</h2>
+            <p>
 
               Após tanto esperar por este momento tão especial para os fãs de Counter Strike, Valve a desenvolvedora do jogo, finalmente deu notícias
               sobre o novo jogo. Todos os jogadores estavam ansiosos de como seria a transição do Counter Strike : Global Offensive, e o grande motivo
@@ -435,6 +474,7 @@ input {
               Porém a Valve, como sempre inusitada, com esforço de tentar não quebrar o mercado das skins e causar um apocalipse na sua empresa, ela
               ela decidiu fazer uma atualização do CS:GO, deixando para trás a antiga engine do jogo, Source, e trazendo a Source 2, que já existe em
               vários jogos atuais da empresa.
+              <br>
               <br>
               Todos os jogadores pensavam que seria apenas uma atualização dos gráficos do jogo, por ser um jogo competitivo, mas foram surpreendidos
               com várias novidades de gráficos, jogabilidade e aprimoramentos, tais como a fumaça volumétrica, que preenche um espaço 3D e se encaixando
@@ -452,12 +492,12 @@ input {
 
             <hr>
 
-            <h2 id="noticia2" style="padding: 25px 0px 0px 25px; font-size: 33px;">Cyberpunk 2077 DLC</h2>
-            <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+            <h2 id="noticia2">Cyberpunk 2077 DLC</h2>
+            <p>
 
               Cyberpunk 2077: Phantom Liberty chega em 27 de setembro para o PC, PlayStation 5 e Xbox Series X/S.
-              A DLC Cyberpunk 2077: Phantom Liberty segue a história de V, o protagonista do jogo original, em busca da cura de um vírus neurochip.
-              <br>
+              A DLC  segue a história de V, o protagonista do jogo original, em busca da cura de um vírus neurochip.
+              
               Desta vez, o personagem embarca em uma missão de espionagem arriscada na nova parte de Night City, chamada Dogtown, com o objetivo de salvar
               a presidente dos Novos Estados Undos.
               <br>
@@ -473,8 +513,8 @@ input {
 
             <hr>
 
-            <h2 id="noticia3" style="padding: 25px 0px 0px 25px; font-size: 33px;">Vazamento massivo de GTA VI</h2>
-            <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+            <h2>Vazamento massivo de GTA VI</h2>
+            <p>
 
               A Rockstar só tem o que comemorar com os 10 anos de GTA V e o lucro que tem tido com o jogo. Enquanto o sexto título principal da série não é revelado,
               um grupo de leakers criou um grande documento detalhando diversos aspectos de GTA VI baseado nos vazamentos que aconteceram no ano passado.
@@ -499,8 +539,8 @@ input {
 
             <hr>
 
-            <h2 id="noticia4" style="padding: 25px 0px 0px 25px; font-size: 33px;">38TB de dados da Microsoft são vazados</h2>
-            <p style="padding: 0px 20px 0px 17px; font-size: 17px;">
+            <h2 id="noticia4">38TB de dados da Microsoft são vazados</h2>
+            <p>
 
               A empresa de segurança cibernética Wiz descobriu que 38 terabytes de dados privados do GitHub da Microsoft foram expostos acidentalmente por erro humano.
               A falha ocorreu quando a equipe de pesquisa em IA da empresa disponibilizou dados de treinamento em um repositório do GitHub.
@@ -524,73 +564,37 @@ input {
 
             </p>
 
+            <hr>
+            <h2 style="text-align: center;">Próximos lançamentos</h2>
         </section>
-
-        <aside>
-
-          <div class="aside">
-
-            <h2 style="padding: 30px 10px 0px; text-align: center;">Próximos lançamentos</h2>
-
-            <div class="game">
-
-                <div class="image">
-                  <img src="./img/index/spiderman2.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-                </div>
-
+        <section class="games-releases">
+          <div class="game">
+            <div class="game-img">
+              <a href="https://www.google.com/search?q=spider+man+2&source=lmns&bih=698&biw=1517&rlz=1C1VDKB_pt-PTBR1069BR1069&hl=pt-BR&sa=X&ved=2ahUKEwiKusmMwZSCAxVDr5UCHdFeBmYQ_AUoAHoECAEQAA"><img src="./img/index/spiderman2.jpg"></a>
             </div>
-
-            <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">20 de outubro de 2023</p>
-            <hr>
-
-            <div class="game">
-
-                <div class="image">
-                  <img src="./img/index/alanwake.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-                </div>
-              
-            </div>
-
-            <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">27 de outubro de 2023</p>
-            <hr>
-
-            <div class="game">
-
-                <div class="image">
-                  <img src="./img/index/littlenightmares3.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-                </div>
-
-            </div>
-
-            <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">Até dezembro de 2024</p>
-            <hr>
-
-            <div class="game">
-
-              <div class="image">
-                <img src="./img/index/starwars.jpeg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-              </div>
-
-            </div>
-
-            <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">Até dezembro de 2024</p>
-            <hr>
-
-            <div class="game">
-
-                <div class="image">
-                  <img src="./img/index/ronin.jpg" style="min-height: 300px; max-height: 300px; max-width: 200px;">
-                </div>
-
-            </div>
-
-            <p style="padding: 0px 20px 0px; text-align: center; font-size: 17px;">Até dezembro de 2024</p>
-
-            <hr>
-
+            <p>20 de outubro de 2023</p>
           </div>
-
-        </aside>
+          <div class="game">
+            <div class="game-img">
+              <a href="https://www.google.com/search?q=rise+of+the+ronin&sca_esv=576910264&rlz=1C1VDKB_pt-PTBR1069BR1069&sxsrf=AM9HkKl138MoJHT7ElP0rP5U5gmW5lsyHA%3A1698350746115&ei=msY6ZafNBtHb1sQPsfWk2Ac&oq=rise+of+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHJpc2Ugb2YgKgIIADIHECMYigUYJzILEC4YigUYsQMYgwEyCxAuGIAEGLEDGIMBMggQLhiABBixAzIHEC4YigUYQzIIEC4YgAQYsQMyBxAuGIoFGEMyCBAuGIAEGLEDMgUQABiABDIFEC4YgARIshJQyAZYzAxwAXgBkAEAmAGEAaAB1AeqAQMwLji4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIEECMYJ8ICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEY0QPCAgcQABiKBRhDwgIOEC4YgAQYsQMYxwEY0QPCAgsQLhiDARixAxiABMICCxAAGIoFGLEDGIMBwgIIEAAYgAQYsQPCAgsQLhiABBjHARivAeIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp"><img src="./img/index/ronin.jpg"></a>
+            </div>
+            <p>Até dezembro de 2024</p>
+          </div>
+          <div class="game">
+            <div class="game-img">
+              <a href="https://www.google.com/search?q=little+nightmares+3&sca_esv=576910264&rlz=1C1VDKB_pt-PTBR1069BR1069&sxsrf=AM9HkKnb0mGozXptvWMofCuXWEKjYS9xUA%3A1698350924266&ei=TMc6ZcHoD8PT1sQPw8eDiAg&oq=little+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2xpdHRsZSAqAggAMgcQIxiKBRgnMgcQIxiKBRgnMggQABiABBixAzIIEC4YgAQYsQMyCBAuGIAEGLEDMgsQLhiABBixAxiDATILEC4YgAQYsQMYgwEyCBAuGIAEGLEDMgsQLhiABBixAxiDATIHEAAYigUYQ0itEFDjBFieC3ABeAGQAQCYAcwBoAGhB6oBBTAuNi4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICChAAGIoFGLADGEPCAhAQLhiKBRjIAxiwAxhD2AEBwgIWEC4YigUYxwEY0QMYyAMYsAMYQ9gBAcICBBAjGCfCAgcQLhiKBRhDwgILEAAYgAQYsQMYgwHCAgsQABiKBRixAxiDAcICBRAAGIAEwgIFEC4YgATiAwQYACBBiAYBkAYPugYECAEYCA&sclient=gws-wiz-serp"><img src="./img/index/littlenightmares3.jpg"></a>
+            </div>
+            <p>Até dezembro de 2024</p>
+          </div>
+          <div class="game">
+            <div class="game-img">
+              <a href="https://www.google.com/search?q=star+wars+outlaws&sca_esv=576910264&rlz=1C1VDKB_pt-PTBR1069BR1069&sxsrf=AM9HkKm51xxZXBl9oMGM0pcb5my6wyrFyg%3A1698350964779&ei=dMc6ZZ2WL7_f1sQPkcWbsAI&oq=star&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHN0YXIqAggAMgcQIxiKBRgnMgQQIxgnMgQQIxgnMgoQLhixAxiKBRhDMgoQLhiKBRixAxhDMgcQLhiKBRhDMgcQABiKBRhDMgcQLhiKBRhDMgoQLhiKBRixAxhDMgsQABiABBixAxiDAUjRFFAAWKwOcAF4AZABAJgBhAGgAeoEqgEDMC41uAEDyAEA-AEBwgIFEAAYgATCAg0QLhiKBRjHARjRAxhDwgIFEC4YgATCAgsQLhiDARixAxiABMICCRAuGIoFGAoYQ8ICDRAAGIAEGLEDGIMBGArCAgcQLhiABBgKwgIIEAAYgAQYsQPCAgcQABiABBgKwgIYEC4YigUYChhDGJcFGNwEGN4EGOAE2AEB4gMEGAAgQYgGAboGBggBEAEYFA&sclient=gws-wiz-serp"><img src="./img/index/starwars.jpeg"></a>
+            </div>
+            <p>Até dezembro de 2024</p>
+          </div>
+          
+        </section>
+      </section>
       
       <footer>
 

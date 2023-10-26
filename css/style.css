@@ -128,6 +128,10 @@ footer a {
   text-decoration: none;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 h2 {
   font-family: 'Titillium Web', sans-serif;
 }
@@ -148,8 +152,7 @@ header button {
 }
 
 header button:hover {
-  transform: scale(1.1);
-  color: #d4d4d4;
+  transform: scale(1.05);
 }
 
 ::-webkit-scrollbar {
