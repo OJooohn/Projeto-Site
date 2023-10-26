@@ -41,7 +41,7 @@ header {
 .login-content hr {
   height: 90%;
   border: 1;
-	border-right: 1px solid #ffffff;
+	border-right: 2px solid #ffffff;
 }
 
 header h1 {
@@ -55,7 +55,7 @@ header button {
   background-color: #00000000;
   color: #fff;
   font-family: 'Work Sans';
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 1.3rem;
 }
 
@@ -105,20 +105,12 @@ nav a:link {
   text-decoration: none;
 }
 
-nav a::after {
-  content: "";
-  position: absolute;
-  background-color: #D03A65;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -2px;
-  transition: 0.3s ease-in-out;
-  border-radius: 1px;
+nav li:hover {
+  transform: scale(1.1);
 }
 
-nav a:hover:after {
-  width: 100%;
+nav li {
+  transition: transform 300ms ease-in-out;
 }
 
 footer {
@@ -150,8 +142,17 @@ p {
   font-family: 'Work Sans', sans-serif;
 }
 
+header button {
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+
+header button:hover {
+  transform: scale(1.1);
+  color: #d4d4d4;
+}
+
 ::-webkit-scrollbar {
-  display: none;
   width: 17px;
   height: 10px;
 }
@@ -165,6 +166,7 @@ p {
  background: #2e2e2e;
  border-radius: 10px;
  border: .2em solid #1a181a;
+ transition: all 300ms ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {

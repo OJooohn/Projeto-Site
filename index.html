@@ -8,6 +8,9 @@
   <link rel="icon" href="./img/index/void.png">
 </head>
 <style>
+  :root {
+    --navigation-btn: #fff;
+  }
 
 article {
   height: 760px;
@@ -105,7 +108,7 @@ input {
 }
 
 .navigation-bar .manual-btn {
-  border: 2px solid #D03A65;
+  border: 2px solid var(--navigation-btn);
   
   width: 50px;
   padding: 7px;
@@ -119,7 +122,7 @@ input {
 }
 
 .manual-btn:hover {
-  background: #d03a6586;
+  background: var(--navigation-btn);
   animation-name: myanimation;
   animation-duration: 0.5s;
   transition: 0.5s;
@@ -180,7 +183,7 @@ input {
 }
 
 .navigation-auto div {
-  border: 2px solid #d03a6586;
+  border: 2px solid var(--navigation-btn);
 
   width: 50px;
   padding: 7px;
@@ -193,19 +196,19 @@ input {
 }
 
 #radio1:checked ~.navigation-auto .auto-btn1 {
-  background-color: #d03a6586;
+  background-color: var(--navigation-btn);
 }
 
 #radio2:checked ~.navigation-auto .auto-btn2 {
-  background-color: #d03a6586;
+  background-color: var(--navigation-btn);
 }
 
 #radio3:checked ~.navigation-auto .auto-btn3 {
-  background-color: #d03a6586;
+  background-color: var(--navigation-btn);
 }
 
 #radio4:checked ~.navigation-auto .auto-btn4 {
-  background-color: #d03a6586;
+  background-color: var(--navigation-btn);
 }
 
 #radio1:checked ~.slide .text1 {
@@ -250,8 +253,10 @@ input {
 
 .slide .text {
   position: absolute;
-  bottom: 22%;
-  left: 50px;
+  bottom: 13%;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 0;
 
   display: none;
   font-size: 50px;
@@ -320,14 +325,14 @@ input {
           <input type="radio" name="radio-btn" id="radio4">
           
           <div class="slide first">
-
+            
             <div class="backgroud-text">
-
+      
               <h2 class="text text1 fade"><a href="#noticia1" style="margin-left: 10px;">Counter Strike 2<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Atualização da engine trás novidades ao jogo</p></a></h2>
               <h2 class="text text2 fade"><a href="#noticia2" style="margin-left: 10px;">Cyberpunk 2077<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Nova DLC chega ao jogo com uma nova história</p></a></h2>
               <h2 class="text text3 fade"><a href="#noticia3" style="margin-left: 10px;">GTA VI<br><p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Grande vazamento traz muitas novidades ao universo do jogo</p></a></h2>
               <h2 class="text text4 fade"><a href="#noticia4" style="margin-left: 10px;">Xbox<p style="font-size: 25px; font-weight: 200; margin: 0px 0px 0px 30px;">Maior vazamento de dados da história</p></a></h2>
-
+      
             </div>
 
             <div class="img-op"></div>
