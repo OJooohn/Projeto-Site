@@ -13,6 +13,16 @@ function nextImage(){
   
 }
 
+let popup = document.getElementById("popup");
+
+function openPopup() {
+  popup.classList.add("open-popup");
+}
+
+function closePopup() {
+  popup.classList.remove("open-popup");
+}
+
 const signIN = document.getElementById('sign-in-btn');
 
 signIN.addEventListener('click', () =>{
