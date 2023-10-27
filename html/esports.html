@@ -140,16 +140,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,93,93,0) 50%, rgba(
   margin-top: 10px;
 }
 
-.right-container {
-  position: relative;
-  height: 175px;
-}
-
-.right-container p {
-  padding-right: 0px;
-  width: auto;
-}
-
 hr {
   border: 1;
 	border-top: 3px solid #fff;
@@ -158,7 +148,13 @@ hr {
 }
 
 .left-container {
-  height: 200px;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.left-container p {
+  margin: 0 auto;
 }
 
 </style>
@@ -197,7 +193,7 @@ hr {
               
               <div class="back-text">
                 
-                <h2 style="text-align: center; font-size: 50px; color: #f8f6f7;"> E-SPORTS </h2>
+                <h2  style="text-align: center; font-size: 50px;color: #f8f6f7;"> E-SPORTS </h2>
                   <p style="color: #f8f6f7;">
                       Os esportes eletrônicos, conhecidos como eSports, representam uma categoria esportiva que envolve competições estruturadas de videogames.
                       Geralmente, tais competições são transmitidas pela internet, via plataformas de streaming, e atraem audiências de milhares de espectadores.
@@ -211,7 +207,7 @@ hr {
 
                 <hr>
 
-                <div class="content-game"">
+                <div class="content-game">
                   
                  
 
@@ -219,9 +215,9 @@ hr {
 
                     <h2 style="color: #f8f6f7; font-size: 33px;"> League of Legends </h2>
 
-                    <div class="left-container">
+                    <div class="left-container" style="display: flex;">
 
-                      <div class="container" style="display: flex; float: left;">
+                      <div class="container">
       
                           <img src="../img/esports/lol.jpg" class="image" style="width: 200px; height: 200px;">
                           <div class="overlay">
@@ -229,7 +225,7 @@ hr {
                           </div>
       
                       </div>
-                        <p style="color: #f8f6f7; display: flex; padding-left: 20px; padding-top: 30px;">
+                        <p style="color: #f8f6f7; margin: auto 0;">
                             O universo dos esportes eletrônicos conta com um cenário extremamente sólido no que diz respeito ao League of Legends (LoL), que ostenta uma presença significativa em várias partes do mundo.
                             A Riot Games estabeleceu um circuito extremamente bem estruturado, que inclui campeonatos regionais e mundiais, resultando em um ecossistema eficaz e em constante crescimento, que conquista um número crescente de fãs.
                             Com ligas regionais e globais, equipes de alto nível e jogadores renomados internacionalmente, o cenário do LoL está em constante transformação e evolução.
@@ -239,9 +235,15 @@ hr {
 
                   </div>
 
-                  <div class="back-text" style="color: #f8f6f7; height: 255px;">
-
-                    <div class="title-image"  style="width: 200px; height: 255px; float: right;">
+                  <div class="back-text" style="color: #f8f6f7; height: auto; display: flex;">
+                    
+                    <p style="color: #f8f6f7; text-align: right; margin: auto 15px;">
+                        As competições profissionais de Counter-Strike representam alguns dos torneios de esportes eletrônicos mais renomados em todo o mundo.
+                        Nesses eventos, jogadores e organizações profissionais se enfrentam no popular jogo de tiro em primeira pessoa (FPS) publicado pela Valve.
+                        O título original, que surgiu em 1999, é uma modificação (mod) criada para o jogo Half-Life, também publicado pela mesma empresa.
+                        Atualmente, o capítulo mais recente da franquia, que se destaca nas competições, é o Counter-Strike: Global Offensive, lançado em 2012.
+                    </p>
+                    <div class="title-image"  style="width: 200px; height: 255px;">
 
                       <h2 style="color: #f8f6f7; font-size: 33px;"> Counter Strike </h2>
                       
@@ -258,20 +260,14 @@ hr {
 
                     </div>
                           
-                          <p style="color: #f8f6f7; padding-top: 80px; padding-right: 220px; text-align: right;">
-                              As competições profissionais de Counter-Strike representam alguns dos torneios de esportes eletrônicos mais renomados em todo o mundo.
-                              Nesses eventos, jogadores e organizações profissionais se enfrentam no popular jogo de tiro em primeira pessoa (FPS) publicado pela Valve.
-                              O título original, que surgiu em 1999, é uma modificação (mod) criada para o jogo Half-Life, também publicado pela mesma empresa.
-                              Atualmente, o capítulo mais recente da franquia, que se destaca nas competições, é o Counter-Strike: Global Offensive, lançado em 2012.
-                          </p>
 
                   </div>
 
                   <div class="back-text" style="color: #f8f6f7; height: 250px;">
 
+                    <h2 style="color: #f8f6f7; font-size: 33px;"> Rocket League </h2>
                     <div class="left-container">
 
-                      <h2 style="color: #f8f6f7; font-size: 33px;"> Rocket League </h2>
           
                         <div class="container" style="display: flex; float: left;">
           
