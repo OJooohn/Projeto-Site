@@ -35,7 +35,6 @@ header {
   width: 15%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .login-content hr {
@@ -165,7 +164,7 @@ header button:hover {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
+  transform: translate(-50%, -50%) scale(0);
   padding: 0 30px 30px;
   color: #fff;
   visibility: hidden;
@@ -173,6 +172,7 @@ header button:hover {
 }
 
 .open-popup {
+  position: fixed;
   visibility: visible;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -240,12 +240,61 @@ header button:hover {
   font-family: 'Work Sans', sans-serif;
 }
 
+.search-box {
+  width: auto;
+  height: 25px;
+  margin: auto 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #424242;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 35px;
+  width: 0;
+  transition: .3s ease-in-out;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.search-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: #292929;
+}
+
 .form-element, .form-div button {
   font-family: 'Work Sans', sans-serif;
 }
 
 ::placeholder {
   font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
 }
 
 ::-webkit-scrollbar {

@@ -14,6 +14,13 @@ header {
   position: fixed;
 }
 
+.login-content {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 40px;
+}
+
 .banner-area {
   background-image: url(../img/esports/major.png);
   background-size: cover;
@@ -161,8 +168,64 @@ hr {
 <main>
   <body>
 
+    <div class="popup" id="popup">
+
+      <div class="close-btn"><button type="button" onclick="closePopup()">&times;</button></div>
+  
+          <div class="form-div">
+            <form action="" method="get">
+              <h2>Sign Up</h2>
+              <div class="form-element">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+  
+              <div class="form-element">
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+              </div>
+  
+              <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email" required>
+              </div>
+            
+              <div class="form-element">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+              </div>
+  
+              <div class="form-element">
+                <label for="psw-repeat">Repeat Password</label>
+                <input type="password" placeholder="Password" name="psw-repeat" id="rpt-password" required>
+              </div>
+  
+              <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+              </div>
+              
+              <input type="submit" value="Submit" class="submit-btn">
+              
+            </form>
+  
+          </div>
+  
+      </div>
+
     <header>
       <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
+    <div class="search-box">
+      <input type="text" class="search-txt" placeholder="Pesquisar">
+      <a href="#" class="search-btn">
+        <img src="../img/index/loupe-white.svg" alt="Lupa" height="20" width="20">
+      </a>
+    </div>
+    <div class="login-content">
+      <button id="sign-up-btn" type="submit"  onclick="openPopup()">Sign up</button>
+        <hr>
+        <button id="sign-in-btn">Sign in</button>
+      </div>
     </header>
 
     <div class="box-area">
@@ -263,13 +326,13 @@ hr {
 
                   </div>
 
-                  <div class="back-text" style="color: #f8f6f7; height: 250px;">
+                  <div class="back-text" style="color: #f8f6f7;">
 
                     <h2 style="color: #f8f6f7; font-size: 33px;"> Rocket League </h2>
                     <div class="left-container">
 
           
-                        <div class="container" style="display: flex; float: left;">
+                        <div class="container">
           
                           <img src="../img/esports/rl.jpg" class="image" style="width: 200px; height: 200px;">
                           <div class="overlay">
@@ -278,7 +341,7 @@ hr {
           
                         </div>
           
-                      <p style="color: #f8f6f7; display: flex; padding-left: 20px; padding-top: 30px;">
+                      <p style="color: #f8f6f7; margin: auto 0;">
                           O Rocket League Championship Series (RLCS) é um torneio anual do jogo eletrônico Rocket League realizado pela Psyonix, a desenvolvedora do jogo.
                           Consiste em três divisões de qualificação online em várias regiões, com as equipes ganhando pontos para a qualificação para os torneios de meio de temporada e as finais do RLCS, ambos realizados como eventos LAN em todo o mundo.
                       </p>
