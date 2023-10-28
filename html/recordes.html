@@ -8,38 +8,318 @@
   <link rel="icon" href="../img/index/void.png">
 </head>
 <style>
+.section-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.616) 0%, rgba(23,22,23,1) 0%, rgba(33,33,37,1) 100%);
+}
+
+.recordes-content {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #d5d5d5fe;
+}
+
+.recordes-content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  text-align: center;
+}
+
+.recordes-content h2 {
+  font-size: 1.3rem;
+}
+
+.recordes-content p {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.3px;
+
+  width: 95%;
+  padding: 0 25px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.recordes-content hr {
+  border: 1;
+  border-bottom: 2px solid #000000;
+
+  width: 97%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.game-content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.game-content img {
+  border-radius: 10px;
+  max-height: 200px;
+  min-height: 200px;
+}
+
+.game-content h2 {
+  margin-top: 10px;
+}
+
+.game-text {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.game-text p {
+  width: 95%;
+  margin: auto auto;
+}
+
+.game-banner {
+  width: 100%;
+  height: 400px;
+  background: url(../img/recordes/banner.jpg);
+  background-position: center center;
+  background-size: cover;
+}
 
 </style>
-<main>
-  <body>
-    <header>
-      <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
-    </header>
-    <article>
-      
-    </article>
-    <nav>
-      <ul>
-        <li><a href="esports.html"><p>E-SPORTS</p></a></div></div></li>
-        <li><a href="historia.html"><p>HISTÓRIA</p></a></div></div></li>
-        <li><a href="thegoats.html"><p>THE GOATS</p></a></li>
-        <li><a href="recordes.html"><p>RECORDES</p></a></li>
-      </ul>
-    </nav>
+<body>
+  <div class="popup" id="popup">
 
-    <section>
-
-    </section>
+    <div class="close-btn"><button type="button" onclick="closePopup()">&times;</button></div>
     
-    <footer id="rodape">
-      <p>&copy; 2023 - Todos os direitos reservados</p>
-      <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
+          <div class="form-div">
+            <form action="" method="get">
+              <h2>Sign Up</h2>
+              <div class="form-element">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              
+              <div class="form-element">
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+              </div>
+              
+              <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email" required>
+              </div>
+            
+              <div class="form-element">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+              </div>
+  
+              <div class="form-element">
+                <label for="psw-repeat">Repeat Password</label>
+                <input type="password" placeholder="Password" name="psw-repeat" id="rpt-password" required>
+              </div>
+              
+              <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+              </div>
+              
+              <input type="submit" value="Submit" class="submit-btn">
+              
+            </form>
+            
+          </div>
+  
+        </div>
+        
+        <header>
+          
+          <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
+          <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar">
+            <a href="#" class="search-btn">
+              <img src="../img/index/loupe-white.svg" alt="Lupa" height="20" width="20">
+            </a>
+          </div>
+          <div class="login-content">
+            <button id="sign-up-btn" type="submit"  onclick="openPopup()">Sign up</button>
+            <hr>
+            <button id="sign-in-btn">Sign in</button>
+          </div>
+      
+        </header>
+
+        
+        <div class="game-banner">
+
+        </div>
+    <main>
+      <nav>
+
         <ul>
-          <li><a href="#"><p>Termos de uso</p></a></li>
-          <li><a href="#"><p>Política de privacidade</p></a></li>
-          <li><a href="#"><p>Sobre nós</p></a></li>
+          <li><a href="./html/esports.html"><p>E-SPORTS</p></a></div></div></li>
+          <li><a href="./html/historia.html"><p>HISTÓRIA</p></a></div></div></li>
+          <li><a href="./html/thegoats.html"><p>THE GOATS</p></a></li>
+          <li><a href="./html/recordes.html"><p>RECORDES</p></a></li>
         </ul>
-    </footer>
+
+      </nav>
+
+      <section class="section-content">
+
+        <div class="recordes-content">
+          <h3>Maior quantidade de sequências de uma franquia lançadas em um ano</h3>
+          <p>
+
+            Você lembra qual foi o máximo de tempo que já passou na frente de um videogame? Ou até qual foi o maior título de jogo que já viu na vida?
+            O mundo dos games é enorme e com diversos e divertidos recordes registrados.
+            <br>
+            <br>
+            Assim como outros setores do entretenimento, os jogos possuem uma categoria específica no Livro dos Recordes (Guinness Book em inglês).
+            A sessão é dedicada a registrar as maiores façanhas de jogadores, desenvolvedoras e inovações da indústria.
+            <br>
+            <br>
+            Nem sempre os recordes que envolvem jogos são tão óbvios, como o primeiro game já criado. O Guinness também separou algumas páginas do
+            livro para introduzir algumas marcas pitorescas. A seguir, conheça os recordes mais absurdos e curiosos do mundo dos jogos.
+
+          </p>
+          <hr>
+
+          <div class="game-content">
+            <h2>Maior quantidade de sequências de uma franquia lançadas em um ano</h2>
+            <div class="game-text">
+              <img src="../img/recordes/fnaf.jpg" alt="Fnaf">
+              <p>Muitos fãs esperam anos até que um novo jogo de uma determinada franquia fique pronta. Não é o caso dos jogadores de Five Nights at Freddy's.
+                A série de terror entrou no livro dos recordes como a franquia que mais ganhou sequências completas em um único ano.
+                <br>
+                <br>
+                Sozinho, o projetista norte-americano Scott Cawthon lançou Five Nights at Freddy', em 8 de agosto de 2014 para PC, e outros dois jogos completos
+                até a chegada de Five Nights at Freddy's 4, em 23 de julho de 2015.
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="game-content">
+            <h2>Maior arrecadação no total</h2>
+            <div class="game-text">
+              <img src="../img/recordes/gtav.jpg" alt="gtaV">
+              <p>O sucesso de GTA V é simplesmente fenomenal. É o "videogame de ação e aventura mais vendido" de todos os tempos, conseguindo permanecer relevante
+                em três gerações de consoles diferentes e ainda parece ótimo, apesar de ter sido lançado há mais de sete anos. Talvez sua conquista mais inspiradora seja a velocidade de lucro.
+                <br>
+                <br>
+                O jogo precisou de apenas três dias para gerar US$ 1 bilhão em vendas, o que, de acordo com o Guinness, o torna a "propriedade de entretenimento mais rápida a obter faturamento
+                bruto de US$ 1 bilhão". Considerando que esta categoria inclui blockbusters de Hollywood e álbuns mais vendidos, este é um feito verdadeiramente incrível e de longe o mais
+                impressionante dos inúmeros da série Grand Theft Auto.
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="game-content">
+            <h2>Jogo mais vendido de todos os tempos</h2>
+            <div class="game-text">
+              <img src="../img/recordes/minecraft.jpg" alt="minecraft">
+              <p>Existem muitos jogos gratuitos que atraem um grande número de jogadores. Quando se trata de jogos comerciais, porém, poucos podem igualar o sucesso de Minecraft. Com mais de 200
+                milhões de unidades vendidas, ele atualmente detém o Recorde Mundial do Guinness de "videogame mais vendido" e ainda conta com incríveis 126 milhões de jogadores ativos por mês.
+              <br>
+              O Guinness também reconhece o Minecraft como tendo o "maior mundo jogável em um videogame", graças ao seu mapa terrestre de 4.096.000.000 km². No entanto, é possível que esse recorde
+              tenha sido quebrado, com muitos jogos enormes de mundo aberto lançados desde que o recorde foi conquistado pela primeira vez em 2013. Perdendo este recorde em 2016.
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="game-content">
+            <h2>O jogo mais transmitido no mundo</h2>
+            <div class="game-text">
+              <img src="../img/recordes/fortnite.jpg" alt="fortnite">
+              <p>Fortnite é um dos jogos de maior sucesso comercial já criados e desempenhou um grande papel na popularização do gênero Battle Royale. É um gênero que o jogo ainda domina até hoje,
+                conforme refletido por seu recente recorde mundial do Guinness para "Mais Streams simultâneos na Twitch para um único jogo". O recorde foi estabelecido em 15 de junho de 2020, momento
+                em que 117.582 pessoas estavam transmitindo o jogo.
+              <br>
+              <br>
+              Infelizmente, o Guinness não dá um número exato quando se trata de quantas pessoas estavam realmente assistindo naquele momento, mas outro registro recente dá uma forte indicação do
+              verdadeiro apelo do jogo. Na edição 2020 do GWR Gamer, Fortnite é reconhecido como a "Primeiro Battle Royale com 250 milhões de jogadores registrados."
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="game-content">
+            <h2>Mais indicações ao prêmio BAFTA para um videogame</h2>
+            <div class="game-text">
+              <img src="../img/recordes/tlou2.jpg" alt="tlou2">
+              <p>A Parte 2 pode ter dividido os fãs com algumas de suas escolhas narrativas, mas a maioria pode concordar que The Last of Us é uma verdadeira obra-prima. Atualmente, ele possui uma
+                classificação de 95 no Metacritic e ganhou vários prêmios desde seu lançamento. No entanto, tem sido particularmente bem-sucedido nos BAFTAs de videogame, detendo o recorde de
+                "Mais indicações ao prêmio BAFTA para um videogame", bem como a maioria das vitórias com 12 e 7,
+                <br>
+                <br>
+                Ele também detém um recorde interessante relacionado ao seu DLC Left Behind, que em 2015 ganhou BAFTAs de videogame para "Melhor Artista" e "Melhor História". Ao fazer isso, foi
+                reconhecido pelo Guinness como sendo o "primeiro DLC a ganhar um BAFTA de videogame". Até agora, este é um feito que ainda não foi repetido.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <footer>
+
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
+
+          <ul>
+            <li><a href="#"><p>Termos de uso</p></a></li>
+            <li><a href="#"><p>Política de privacidade</p></a></li>
+            <li><a href="#"><p>Sobre nós</p></a></li>
+          </ul>
+
+      </footer>
   </body>
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup() {
+  popup.classList.add("open-popup");
+}
+
+function closePopup() {
+  popup.classList.remove("open-popup");
+}
+
+const signIN = document.getElementById('sign-in-btn');
+
+signIN.addEventListener('click', () =>{
+  const form = document.getElementById('form');
+
+  if(form.style.display === 'none'){
+    form.style.display = 'flex';
+  } else {
+    form.style.display = 'none';
+  }
+})
+
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("rpt-password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
 </main>
 </html>
