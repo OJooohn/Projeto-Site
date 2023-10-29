@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 * {
   padding: 0;
@@ -26,7 +23,8 @@ html {
 
 header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   background-color: #1A181A;
   height: 50px;
@@ -133,20 +131,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-h2 {
-  font-family: 'Titillium Web', sans-serif;
-}
-
-h3 {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-p {
-  font-family: 'Work Sans', sans-serif;
-}
-
 header button {
   transition: transform 300ms ease-in-out;
   cursor: pointer;
@@ -197,6 +181,7 @@ header button:hover {
 }
 
 .popup .form-div h2 {
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
   color: #ffffff;
   margin: 10px 0px 20px;
@@ -241,43 +226,6 @@ header button:hover {
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
 }
-
-.search-box {
-  width: auto;
-  height: 25px;
-  margin: auto 0;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #424242;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-.search-txt {
-  border: none;
-  background: none;
-  outline: none;
-  color: #fff;
-  font-size: 1rem;
-  line-height: 35px;
-  width: 300px;
-  transition: .3s ease-in-out;
-  font-family: 'Work Sans', sans-serif;
-}
-
-.search-btn {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background: #424242;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .5s ease;
-}
-
 
 .form-element, .form-div button {
   font-family: 'Work Sans', sans-serif;
