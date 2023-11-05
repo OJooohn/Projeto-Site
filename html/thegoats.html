@@ -10,99 +10,138 @@
 </head>
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
 header {
-	height: 50px;
-	background: #000000;
-	position: fixed;
-    display: grid;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
+  width: calc(100% - 40px);
+  position: fixed;
 }
 
-footer{
-    background-color: #000000;
-    height: 1000px;
-    clear:both;
-}
-
-
-.logo {
-	width: 7.5%;
-	float: left;
-	line-height: 1000px;
-}
-
-section {
-    text-decoration: none;
-	font-family: poppins;
-	letter-spacing: 0px;
-	font-size: 25px;
-	color: #000000;    
+.banner-area div {
+  margin: 0 auto;
+  display: flex;
+  border-radius: 20px;
 }
 
 .banner-area {
-	width: 100%;
-	height: 500px;
-	position: fixed;
-	top: 70px;
-	background-image: url(https://i.postimg.cc/SsbVwxq1/goty.png);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
+  background-image: url(../img/goats/goty.png);
+  background-size: cover;
+  background-position: center center;
+  top: 70px;
+  height: 560px;
+  width: 100%;
+  position: fixed;
+
+}
+
+.banner-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 100%);
+}
+
+.banner-area h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: #ffff;
   text-align: center;
 }
-.banner-area h2 {
-	padding-top: 8%;
-	font-size: 70px;
-	font-family: poppins;
-	text-transform: uppercase;
-	color: #fff;
+
+.banner-area div {
+  margin: 0 auto;
+  display: flex;
+  border-radius: 20px;
 }
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: 'Montserrat';
+}
+
+.intro p {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.side-images {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.616) 0%, rgba(23,22,23,1) 0%, rgba(33,33,37,1) 100%);
+  background-size: cover;
+  background-position: center center;
+}
+
+.popup {
+  z-index: 1000;
+}
+
 .content-area {
-	width: 100%;
-	position: relative;
-	top: 450px;
-	background: #ebebeb;
-	height: auto;
+  z-index: 11;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
-.content-area h2 {
-  text-align: center;
-	font-family: poppins;
-	letter-spacing: 2px;
-	padding-top: 30px;
-	font-size: 40px;
-	margin: 0;
+
+.content-area .wrapper , .intro{
+  padding: 10px 15px;
+  background-color: #0000007d;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
-.content-area p {
-	padding: 0px 10px 0px 10px;
-	font-family: poppins;
-	line-height: 30px;
+
+.intro {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wrapper {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content-area .wrapper p, h2, .intro {
+  color: #ffff;
 }
 
 article
 .container {
-    width: 100%;
-    min-height: 100vh;
+    width: 97%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    height: auto;
     display: flex;
+    gap: 1rem;
+    flex-basis: 33.33333%;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #580404e5;
 }
 
 .card {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    width: 360px;
+    width: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(#333, #333);
-    transition: all .5s;
+    background-image: linear-gradient(#000000, #ffffff);
+    transition: max-height 0.5s;
 }
 
 .card:hover {
@@ -115,7 +154,7 @@ article
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-image: url('https://i.postimg.cc/ZqHfKrTd/Madden-NFL-2004.jpg');
+    
     background-size: cover;
     background-position: center;
     transition: all .5s;
@@ -155,14 +194,14 @@ article
 
 .card:hover .content {
   transition: all  1s;
-    height: 320px;
-    padding: 0px;
-    opacity: 1;
-    transform: translateY(0);
+  height: 260px;
+  padding: 0px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card2:hover .content {
-  transition: all  1s;
+    transition: all  1s;
     height: 230px;
     padding: 0px;
     opacity: 1;
@@ -170,91 +209,686 @@ article
 }
 
 .card .content p {
-    margin: 0;
+  color: #000;
 }
 
+.card .content {
+  display: grid;
+  place-items: center;
+}
 
+.desc {
+  width: 93%;
 
-.card .content .desc {
+  font-family: 'Titillium Web', sans-serif;
+  color: #000;
   text-align: center;
-    font-size: 14px;
-    font-weight: 100px;
-    opacity: .8;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    letter-spacing: 0px;
-    
+  font-size: 1.07rem;
+  font-weight: 100px;
 }
 
-.card2 {
-    float: right; 
-    margin-left: 50px; 
+.card .img span {
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+  background-color: #ffffff25;
+  border-radius: 20px;
 }
+
+.card0 .img {
+  background-image: url(../img/goats/Madden-NFL-2004.jpg);
+}
+
+.card1 .img {
+    background-image: url(../img/goats/GTA-San-Andreas-PlayStation-2.jpg);
+}
+
 .card2 .img {
-    background-image: url('https://i.postimg.cc/Y0PYCzDb/gta.jpg');
+    background-image: url(../img/goats/Resident-Evil-4.jpg);
 }
 
-footer{
-    background-color: #000000;
-    height: 1000px;
-    color: #aaaaaaaa;
-    clear:both;
+.card3 .img {
+    background-image: url(../img/goats/The-Elder-Scrolls-IV-Oblivion.jpg);
 }
+
+.card4 .img {
+    background-image: url(../img/goats/Bioshock-capa-do-jogo-BioShock-Isolation-em-2022.jpg);
+}
+
+.card5 .img {
+    background-image: url(../img/goats/GTA-IV.jpg);
+}
+
+.card6 .img {
+    background-image: url(../img/goats/Uncharted-2.jpg);
+}
+
+.card7 .img {
+    background-image: url(../img/goats/Red-Dead-Redemption-1.jpg);
+}
+
+.card8 .img {
+    background-image: url(../img/goats/Skyrim-1.jpg);
+}
+
+.card9 .img {
+    background-image: url(../img/goats/The-Walking-Dead.jpg);
+}
+
+.card10 .img {
+    background-image: url(../img/goats/Grand-Theft-Auto-V-Premium-1000000GTA-KLUCZ.jpg);
+}
+
+.card11 .img {
+    background-image: url(../img/goats/Dragon-Age-Inquisition-e1638995280291.jpg);
+}
+
+.card12 .img {
+    background-image: url(../img/goats/The-Witcher-3-no-PlayStation-Plus.jpg);
+}
+
+.card13 .img {
+    background-image: url(../img/goats/Overwatch.jpg);
+}
+
+.card14 .img {
+    background-image: url(../img/goats/The-Legend-of-Zelda-Breath-of-the-Wild.jpg);
+}
+
+.card15 .img {
+    background-image: url(../img/goats/God-of-War-PS4.jpg);
+}
+
+.card16 .img {
+    background-image: url(../img/goats/Sekiro-Shadows-Die-Twice-.jpg);
+}
+
+.card17 .img {
+    background-image: url(../img/goats/The-lou.jpg);
+}
+
+.card18 .img {
+    background-image: url(../img/goats/It-Takes-Two.jpg);
+}
+
+.card19 .img {
+    background-image: url(../img/goats/eldenringbannerRS.jpg);
+}
+
+.card20 .img {
+    background-image: url(../img/goats/loading-circle-black-screen-loading-footage-122008758_iconl.jpg);
+}
+
+.box-area {
+  position: relative;
+  top: 500px;
+}
+
 </style>
 <main>
   <body>
-    <div class="box-area">
-      <header>
-              <<a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
-        <div class="wrapper">     
-  
+    <div class="popup" id="popup">
+
+        <div class="close-btn"><button type="button" onclick="closePopup()">&times;</button></div>
+    
+            <div class="form-div">
+              <form action="" method="get">
+                <h2>Sign Up</h2>
+                <div class="form-element">
+                  <label for="name">Full Name</label>
+                  <input type="text" placeholder="Enter your name" required>
+                </div>
+    
+                <div class="form-element">
+                  <label for="phone">Enter your phone number:</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                </div>
+    
+                <div class="form-element">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" placeholder="Email" required>
+                </div>
+              
+                <div class="form-element">
+                  <label for="password">Create Password</label>
+                  <input type="password" id="password" placeholder="Password" required>
+                </div>
+    
+                <div class="form-element">
+                  <label for="psw-repeat">Repeat Password</label>
+                  <input type="password" placeholder="Password" name="psw-repeat" id="rpt-password" required>
+                </div>
+    
+                <div class="form-element">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Remember me</label>
+                </div>
+                
+                <input type="submit" value="Submit" class="submit-btn">
+                
+              </form>
+    
+            </div>
+    
         </div>
+  
+      <header>
+  
+        <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
+      
+      <div class="login-content">
+        <button id="sign-up-btn" type="submit"  onclick="openPopup()">Sign up</button>
+          <hr>
+          <button id="sign-in-btn">Sign in</button>
+      </div>
+      
       </header>
+
+    <div class="box-area">
   
       <div class="banner-area">
-        <h2> THE GOATS </h2>
+        <div style="background-color: #00000077; width: fit-content; margin-top: 130px; padding: 10px 30px;">
+            <h2> THE GOATS </h2>
+        </div>
       </div>
-      <article>
-      <section>
+
       <div class="content-area">
-        <div class="wrapper">
-          <h2 style="font-size: 50px">Game Of the Year  </h2>
-                  <h2 style="font-size: 25px;">2003-2022</h2>				
-                  <p style="font-size:20px ;"> Reconhecendo um jogo que se destaca como a referência suprema em todos os aspectos criativos e técnicos.</p>
-                  <div class="container">
-                      <div class="card">
-                          <div class="img">
-                              <span>2003</span>
-                          </div>
+
+        <div class="navigation" style="margin: 0;">
+
+          <nav>
+            <ul>
+              <li><a href="esports.html"><p>E-SPORTS</p></a></li>
+              <li><a href="historia.html"><p>HISTÓRIA</p></a></li>
+              <li><a href="thegoats.html"><p>THE GOATS</p></a></li>
+              <li><a href="recordes.html"><p>RECORDES</p></a></li>
+            </ul>
+          </nav>
+
+        </div>
+        
+        <div class="side-images">
+
+          <div class="op-side">
+
+            <div class="intro">
               
-                          <div class="content">
-                              <div class="card"></div>
-                              <p class="desc">Em 2003, Madden NFL 2004 se destacou ao ganhar o cobiçado prêmio de Jogo do Ano (GOTY) no Spike Game Awards. Este jogo de esportes foi elogiado por suas características completas como um simulador de futebol americano. A concorrência incluiu títulos notáveis como GTA Vice City, Splinter Cell e Zelda Wind Waker, mas Madden NFL 2004 saiu vitorioso, tornando-se o único vencedor de GOTY em seu gênero.</p>
+              <div class="back-text">
+                
+                <h2  style="text-align: center; font-size: 50px;color: #f8f6f7;"> Game Of the Year  </h2>
+                <h2  style="text-align: center; font-size: 30px;color: #f8f6f7;"> 2003-2022  </h2>
+                  <p style="color: #f8f6f7;">
+                    Reconhecendo um jogo que se destaca como a referência suprema em todos os aspectos criativos e técnicos.
+                  </p>
+                
+              </div>
+
+            </div>
+
+            <article>
+              <section>
+              <div class="content-area">
+                <div class="wrapper">
+
+                          <div class="container">
+                              <div class="card card0">
+                                  <div class="img">
+                                      <span>2003</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        
+                                        <p>Em 2003, Madden NFL 2004 fez história e continua como o único do seu gênero o o grande ganhador do prêmio. Na época, foram elogiados os seus recursos
+                                          completos como um simulador de futebol americano. E a competição foi nada fácil: GTA Vice City, Splinter Cell e Zelda Wind Waker eram os concorrentes ao “caneco”.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div>
+          
+                              <div class="card card1">
+                                  <div class="img">
+                                      <span>2004</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          GTA San Andreas é um dos jogos mais conhecidos e jogados de toda a história. O protagonista “CJ” também é ilustre, principalmente com seus memes. 
+                                          O título trouxe grande liberdade no mundo aberto, história emocionante e gameplay viciante. Não deu para Halo 2 e Half-Life em 2004.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+                              
+                              <div class="card card2">
+                                  <div class="img">
+                                      <span>2005</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p>
+                                          Resident Evil 4, um dos mais famosos jogos da popular saga da Capcom, levou merecidamente o prêmio. É um sucesso até hoje
+                                          e muitos pedem o seu remake para ter uma experiência renovada contra os icônicos inimigos e nos cenários tenebrosos do game.
+                                          God of War e World of Warcraft ficaram para trás esse ano.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card3">
+                                  <div class="img">
+                                      <span>2006</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p>
+                                          Assim como o seu sucessor, The Elder Scrolls IV: Oblivion é um RPG repleto de conteúdo, grande mundo aberto e muitas (coloca muitas nisso)
+                                          horas de gameplay. Como um “prato cheio” para os amantes de “Role Playing”, o título se tornou um dos vencedores do GOTY em 2006, superando 
+                                          Gears of War e Guitar Hero 2.
+                                          </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card4">
+                                  <div class="img">
+                                      <span>2007</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p>
+                                          BioShock não é um dos mais consagrados shooters RPG da indústria por qualquer motivo. O primeiro título da série foi agraciado com o GOTY em 2007,
+                                          por conta da sua jogabilidade viciante e cenários surpreendentes. Halo 3 e Mass Effect até tentaram bater de frente com o jogo da Irrational Games,
+                                          mas o vencedor teve grande merecimento.
+                                          </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card5">
+                                  <div class="img">
+                                      <span>2008</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          GTA IV é mais um da franquia da Rockstar na lista de vencedores do GOTY. Muitos o consideram como o melhor da saga, mas, com tantos jogos
+                                          aclamados, é difícil dizer qual é o melhor. O protagonista Niko Bellic se destaca, juntamente com a história  e gameplay. 
+                                          Desta vez, Fallout 3 e Gears of War 2 ficaram de “mãos abanando” no principal prêmio.
+                                          </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card6">
+                                  <div class="img">
+                                      <span>2009</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Uncharted 2 compete com o quarto título da franquia de Nathan Drake pela preferência dos fãs. 
+                                          A obra possui cenas de ação fulminantes, como a da imagem acima logo no início da aventura.
+                                          O protagonista está em seu auge como caçador de tesouros, os personagens secundários são excelentes e a narrativa é muito elogiada.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card7">
+                                  <div class="img">
+                                      <span>2010</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Antes de Arthur Morgan fazer sucesso em RDR 2, John Marston foi grande nome de Red Dead Redemption, um dos vencedores do GOTY.
+                                          O game de Velho Oeste chegou ao PS3 com gráficos incríveis para a época, excelente história e gameplay refinado.
+                                          Mesmo a concorrência com God of War 3 e Mass Effect 2 foram páreo para o jogo da Rockstar Games.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+                              
+                              <div class="card card8">
+                                  <div class="img">
+                                      <span>2011</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Tem o que falar de The Elder Scrolls V: Skyrim? O enorme RPG da Bethesda é um marco na indústria com um vasto mundo aberto,
+                                          história densa, muito conteúdos, jogabilidade “a frente do seu tempo” e muito mais. 2011 não teve para ninguém.
+                                          O título segue sendo um sucesso até hoje, com a estreia recente de uma versão aprimorada para o PS5.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+                              
+                              <div class="card card9">
+                                  <div class="img">
+                                      <span>2012</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          The Walking Dead: The Game, o título com narrativa interativa é o único do gênero na lista e, claro, ganhou a concorrência sua história magnífica e momentos emocionantes.
+                                          uitos acreditavam que Dishonored (Arkane Studios) poderia levar, mas o estúdio de Deathloop apenas levou o prêmio de melhor ação/aventura.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+                              
+                              <div class="card card10">
+                                  <div class="img">
+                                      <span>2013</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          GTA V disputou o GOTY 2013 com nada menos que The Last of Us. No entanto, o título da Rockstar mostrou sua qualidade na história,
+                                          gameplay e visuais para aquele ano. Além disso, segue sendo um dos mais vendidos até hoje, somente atrás de Minecraft entre os games mais vendidos da história.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card11">
+                                  <div class="img">
+                                      <span>2014</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Um dos primeiros grandes jogos da geração PS4 e Xbox One, Dragon Age Inquisition mostrou a capacidade gráfica dos consoles para a época e
+                                          conquistou a todos com seus complexos e viciantes sistemas de RPG. O game foi extremamente elogiado e mereceu o prêmio sem muita concorrência no primeiro ano do The Game Awards.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card12">
+                                  <div class="img">
+                                      <span>2015</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          2015 foi o ano do “bruxão”. The Witcher 3: Wild Hunt ganhou o “Jogo do Ano” indiscutivelmente e alçou a CD Projekt RED como uma das principais
+                                          desenvolvedoras do mundo. História, mundo aberto, imersão, personagens e muito mais garantiram o título.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card13">
+                                  <div class="img">
+                                      <span>2016</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          O GOTY 2016 é considerado polêmico. Muitos acreditavam que Uncharted 4, a última aventura de Nathan Drake, levaria o “caneco”.
+                                          No entanto, Overwatch surpreendeu com sua qualidade e trazendo muitas novidades para o gênero de shooters multiplayer.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card14">
+                                  <div class="img">
+                                      <span>2017</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          2017 foi um ano dominado pela Nintendo, principalmente por conta do lançamento do Nintendo Switch. O console portátil veio acompanhado de The
+                                          Legend of Zelda: Breath of the Wild e Mario Odyssey, os dois principais concorrentes ao prêmio no ano. O primeiro ganhou com muito mérito, sendo
+                                          considerado um dos principais mundos abertos já lançados.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div>
+
+                              <div class="card card15">
+                                  <div class="img">
+                                      <span>2018</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          “GAROTO”! Não importa quanto tempo passe, a voz de Kratos chamando Atreus está marcada nos games. God of War levou o GOTY
+                                          em 2018 superando a grande concorrência de Red Dead Redemption 2, possivelmente, a disputa mais acirrada entre dois jogos da história da premiação.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card16">
+                                  <div class="img">
+                                      <span>2019</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Enfim, a FromSoftware foi agraciada com o grande prêmio do TGA em 2019, após muitos anos batendo na trave. Sekiro: Shadows Die Twice, com toda sua
+                                          qualidade, servir para premiar todo o histórico de grandes lançamentos do estúdio com Dark Souls e Bloorborne.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card17">
+                                  <div class="img">
+                                      <span>2020</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          The Last of Us Part II foi o grande vencedor do GOTY 2020. Em um ano que muitos acreditavam que Cyberpunk 2077 iria rivalizar com o jogo da Naughty
+                                          Dog, a sequência ganhou com certa facilidade. O RPG futurístico nem chegou a ser lançado no prazo do evento e o resultado já é bem conhecido…
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card18">
+                                  <div class="img">
+                                      <span>2021</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Olha o novato aí! It Takes Two foi coroado como o “Melhor Jogo do Ano” no The Game Awards 2021 e superou concorrentes como Deathloop, Resident Evil
+                                          Village e Ratchet & Clank: Em Uma Outra Dimensão. O prêmio foi a coroação do diretor Josef Fares, com um gameplay cooperativo extremamente divertido e diversificado.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card19">
+                                  <div class="img">
+                                      <span>2022</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Para muitos esse é o ano da vingança. Os fãs de God of War podem chorar à vontade, porque, assim como em 2018,
+                                          ão tem o que fazer, o vencedor é Elden Ring. E sinceramente, que jogo maravilhoso.
+                                          O RPG de ação com foco em combate e exploração apresenta o jogo por meio de uma perspectiva em terceira pessoa em um mundo aberto livre
+                                          para os jogadores vagarem.
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
+                              <div class="card card20">
+                                  <div class="img">
+                                      <span>2023</span>
+                                  </div>
+                      
+                                  <div class="content">
+                                      <div class="card"></div>
+                                      <div class="desc">
+                                        <p> 
+                                          Esperando dezembro para o resultado final do prêmio...
+                                        </p>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="arrow">
+                                      <span>&#8673;</span>
+                                  </div>
+                              </div> 
+
                           </div>
-              
-                          <div class="arrow">
-                              <span>&#8673;</span>
-                          </div>
-                      </div>
-  
-                      <div class="card card2">
-                          <div class="img">
-                              <span>2004</span>
-                          </div>
-              
-                          <div class="content">
-                              <div class="card"></div>
-                              <p class="desc"> GTA San Andreas é um dos jogos mais conhecidos e jogados de toda a história. O protagonista “CJ” também é ilustre, principalmente com seus memes. O título trouxe grande liberdade no mundo aberto, história emocionante e gameplay viciante. Não deu para Halo 2 e Half-Life em 2004.</p>
-                          </div>
-              
-                          <div class="arrow">
-                              <span>&#8673;</span>
-                          </div>
-                      </div> 
-                           
-                  </div>
-  </section>
-  </article>
+          </section>
+          </article>
+
+          </div>
+
+        </div>
+
+        <footer>
+          <p>&copy; 2023 - Todos os direitos reservados</p>
+          <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
+            <ul>
+              <li><a href="#"><p>Termos de uso</p></a></li>
+              <li><a href="#"><p>Política de privacidade</p></a></li>
+              <li><a href="#"><p>Sobre nós</p></a></li>
+            </ul>
+        </footer>
+
+      </div>
+      
   </body>
+  <script>
+    let popup = document.getElementById("popup");
+    
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+    
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+    </script>
 </main>
 </html>
