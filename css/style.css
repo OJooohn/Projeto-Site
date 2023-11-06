@@ -11,27 +11,6 @@
   border: 0;
 }
 
-main {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: 0px auto;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  background-color: #1A181A;
-  height: 50px;
-  padding: 10px 20px;
-}
-
 .login-content {
   display: flex;
   flex-wrap: nowrap;
@@ -43,103 +22,6 @@ header {
   border: 1;
 	border-right: 2px solid #ffffff;
   margin: auto 0;
-}
-
-header h1 {
-  margin: auto 10px;
-  font-size: 1.7rem;
-  font-family: 'Orbitron', sans-serif;
-  color: #fff;
-}
-
-header button {
-  background-color: #00000000;
-  color: #fff;
-  font-family: 'Work Sans';
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-header a {
-  display: flex;
-  color: inherit;
-  text-decoration: none;
-}
-
-header img {
-  max-height: 30px;
-  width: 30px;
-  margin: auto;
-}
-
-nav {
-  text-align: center;
-  background-color: #212125;
-  height: auto;
-}
-
-nav p {
-  font-family: 'Gabarito', sans-serif;
-  font-size: 1.5em;
-  color: #fff;
-}
-
-li {
-  display: inline-block;
-  color: #F8F6F7;
-  margin: 10px;
-}
-
-nav li {
-  margin-right: 50px;
-}
-
-nav a {
-  position: relative;
-  text-decoration: none;
-  display: flex;
-}
-
-nav a:link {
-  color: inherit;
-  text-decoration: none;
-}
-
-nav li:hover {
-  transform: scale(1.1);
-}
-
-nav li {
-  transition: transform 300ms ease-in-out;
-}
-
-footer {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: #171617;
-  color: #aaaaaa;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  clear: both;
-  padding-top: 10px;
-}
-
-footer a {
-  color: inherit;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-header button {
-  transition: transform 300ms ease-in-out;
-  cursor: pointer;
-}
-
-header button:hover {
-  transform: scale(1.05);
 }
 
 .popup {
@@ -231,6 +113,124 @@ header button:hover {
 
 .form-element, .form-div button {
   font-family: 'Work Sans', sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0px auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #1A181A;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: auto 10px;
+  font-size: 1.7rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+header button {
+  background-color: #00000000;
+  color: #fff;
+  font-family: 'Work Sans';
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+header button {
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+
+header button:hover {
+  transform: scale(1.05);
+}
+
+header a {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+}
+
+header img {
+  max-height: 30px;
+  width: 30px;
+  margin: auto;
+}
+
+nav {
+  text-align: center;
+  background-color: #212125;
+  height: auto;
+}
+
+nav p {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+li {
+  display: inline-block;
+  color: #F8F6F7;
+  margin: 10px;
+}
+
+nav li {
+  margin-right: 50px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+}
+
+nav a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+}
+
+nav li {
+  transition: transform 300ms ease-in-out;
+}
+
+footer {
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #171617;
+  color: #aaaaaa;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  clear: both;
+  padding-top: 10px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 ::placeholder {
