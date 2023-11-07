@@ -12,43 +12,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+  
+header {
+  width: calc(100% - 40px);
+  position: fixed;
+}
 
-.section-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.banner-area {
+  background-image: url(../img/recordes/banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  top: 70px;
+  height: 560px;
   width: 100%;
-  height: auto;
+  position: fixed;
+
+}
+
+.banner-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 100%);
+}
+
+.banner-area h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  color: #ffff;
+  text-align: center;
+}
+
+.banner-area div {
+  margin: 0 auto;
+  display: flex;
+  border-radius: 20px;
+}
+
+.side-images {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.616) 0%, rgba(23,22,23,1) 0%, rgba(33,33,37,1) 100%);
-  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center center;
 }
 
-.recordes-content {
+.content-area {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 590px;
+}
+
+.content-area .wrapper , .intro{
+  padding: 10px 15px;
+  background-color: #000000aa;
+  position: relative;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.content-area .wrapper p, h2, .intro {
+  color: #ffff;
+}
+
+.container {
+  border-radius: 15px;
+  position: relative;
+  
+  width: 200px;
+  height: 200px;
+}
+
+.back-text {
+  background-color: #17161760;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  height: auto;
+}
+
+.back-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.back-text h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.intro {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.intro h2 {
+  font-size: 3rem;
+}
+
+.content-area {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 10px;
-  width: 80%;
-  margin: 0 auto;
-  background-color: #0b0b0c;
 }
 
-.recordes-content h2 {
-  color: #fff;
+.intro h2 {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.recordes-content p {
-  color: #fff;
+.intro p {
   font-family: 'Montserrat', sans-serif;
-  text-align: left;
   font-size: 1.1rem;
-
-  width: 95%;
-  padding: 0 25px;
-  padding-bottom: 15px;
-  margin: 0 auto;
 }
 
 .game-content {
@@ -77,48 +158,35 @@
   margin: auto auto;
 }
 
-.game-banner {
-  width: 100%;
-  height: 400px;
-  background: url(../img/recordes/banner.jpg);
-  background-position: center center;
-  background-size: cover;
-  z-index: 1;
-}
-
-.banner-opacity {
-  width: 100%;
-  height: 400px;
-  background: rgb(197,197,197);
-  background: radial-gradient(circle, rgba(197,197,197,0) 0%, rgba(0,0,0,0.9519979866946778) 85%);
-  opacity: .8;
-}
-
-.back-text {
-  background-color: #17161760;
-  border-radius: 10px;
-  margin: 15px;
-  padding: 15px;
-  height: auto;
-}
-
-.intro h2 {
-  color: #fff;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 3rem;
-}
-
-.intro p {
+.game-content p {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  text-align: left;
   font-size: 1.1rem;
+
+  width: 95%;
+  padding: 0 25px;
+  padding-bottom: 15px;
+  margin: 0 auto;
 }
 
-.content {
-  padding: 10px;
-  width: 80%;
+.center-table {
+  width: 95%;
+  padding: 0 25px;
+  padding-bottom: 15px;
+}
+
+table {
+  padding: 5px;
   margin: 0 auto;
-  background-color: #0b0b0c;
+  background-color: #0d0d0d;
+  color: #fff;
+  border-radius: 10px;
+}
+
+table thead th {
+  border-bottom: 1px solid #458390;
+  width: 110%;
 }
 
 </style>
@@ -126,83 +194,91 @@
   <div class="popup" id="popup">
 
     <div class="close-btn"><button type="button" onclick="closePopup()">&times;</button></div>
-    
-          <div class="form-div">
-            <form action="" method="get">
-              <h2>Sign Up</h2>
-              <div class="form-element">
-                <label for="name">Full Name</label>
-                <input type="text" placeholder="Enter your name" required>
-              </div>
-              
-              <div class="form-element">
-                <label for="phone">Enter your phone number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone number">
-              </div>
-              
-              <div class="form-element">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Email" required>
-              </div>
-            
-              <div class="form-element">
-                <label for="password">Create Password</label>
-                <input type="password" id="password" placeholder="Password" required>
-              </div>
-  
-              <div class="form-element">
-                <label for="psw-repeat">Repeat Password</label>
-                <input type="password" placeholder="Password" name="psw-repeat" id="rpt-password" required>
-              </div>
-              
-              <div class="form-element">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember me</label>
-              </div>
-              
-              <input type="submit" value="Submit" class="submit-btn">
-              
-            </form>
-            
-          </div>
-  
-        </div>
-        
-        <header>
+
+        <div class="form-div">
+          <form action="" method="get">
+            <h2>Sign Up</h2>
+            <div class="form-element">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-element">
+              <label for="phone">Enter your phone number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone number">
+            </div>
+
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Email" required>
+            </div>
           
-          <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
-          <div class="login-content">
-            <button id="sign-up-btn" type="submit"  onclick="openPopup()">Sign up</button>
-            <hr>
-            <button id="sign-in-btn">Sign in</button>
-          </div>
-      
-        </header>
+            <div class="form-element">
+              <label for="password">Create Password</label>
+              <input type="password" id="password" placeholder="Password" required>
+            </div>
 
-        <div class="game-banner">
-          <div class="banner-opacity"></div>
+            <div class="form-element">
+              <label for="psw-repeat">Repeat Password</label>
+              <input type="password" placeholder="Password" name="psw-repeat" id="rpt-password" required>
+            </div>
+
+            <div class="form-element">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+            
+            <input type="submit" value="Submit" class="submit-btn">
+            
+          </form>
+
         </div>
 
-    <main>
-      <nav>
+    </div>
 
-        <ul>
-          <li><a href="../html/esports.html"><p>E-SPORTS</p></a></div></div></li>
-          <li><a href="../html/historia.html"><p>HISTÓRIA</p></a></div></div></li>
-          <li><a href="../html/thegoats.html"><p>THE GOATS</p></a></li>
-          <li><a href="../html/recordes.html"><p>RECORDES</p></a></li>
-        </ul>
+  <header>
 
-      </nav>
+    <a href="../index.html"><img src="../img/index/void.png"><h1>VOID NEWS</h1></a>
+    <div class="login-content">
+      <button id="sign-up-btn" type="submit"  onclick="openPopup()">Sign up</button>
+        <hr>
+        <button id="sign-in-btn">Sign in</button>
+    </div>
+  
+  </header>
 
-      <section class="section-content">
-        <div class="content">
+  <div class="box-area">
+
+    <div class="banner-area">
+
+      <div style="background-color: #00000077; width: fit-content; margin-top: 170px; padding: 10px 30px;">
+        <h2>RECORDES</h2>
+      </div>
+
+    </div>
+
+    <div class="content-area">
+
+      <div class="navigation" style="margin: 0;">
+
+        <nav>
+          <ul>
+            <li><a href="esports.html"><p>E-SPORTS</p></a></li>
+            <li><a href="historia.html"><p>HISTÓRIA</p></a></li>
+            <li><a href="thegoats.html"><p>THE GOATS</p></a></li>
+            <li><a href="recordes.html"><p>RECORDES</p></a></li>
+          </ul>
+        </nav>
+
+      </div>
+      
+      <div class="side-images">
 
           <div class="intro">
-  
+            
             <div class="back-text">
-  
-              <h2 id="teste" style="font-size: 50px; text-align: center;">Mundo dos Games</h2>
+              
+              <h2 id="teste" style="font-size: 3rem; text-align: center;">Mundo dos Games</h2>
               <p>
 
                 Você lembra qual foi o máximo de tempo que já passou na frente de um videogame? Ou até qual foi o maior título de jogo que já viu na vida?
@@ -217,18 +293,19 @@
                 livro para introduzir algumas marcas pitorescas. A seguir, conheça os recordes mais absurdos e curiosos do mundo dos jogos.
     
               </p>
-  
+              
             </div>
-  
+
           </div>
 
-        </div>
+            <div class="wrapper">
 
-        <div class="recordes-content">
-          
-            <div class="game-content">
+              <hr>
 
-                <div class="back-text">
+              <div class="game-content">
+
+                <div class="back-text" style="color: #f8f6f7;">
+
                   <h2>Maior quantidade de sequências de uma franquia lançadas em um ano</h2>
                   <div class="game-text">
                     <img src="../img/recordes/fnaf.jpg" alt="Fnaf">
@@ -239,109 +316,127 @@
                       Sozinho, o projetista norte-americano Scott Cawthon lançou Five Nights at Freddy', em 8 de agosto de 2014 para PC, e outros dois jogos completos
                       até a chegada de Five Nights at Freddy's 4, em 23 de julho de 2015.
                     </p>
+
                   </div>
 
-              </div>
-
-            </div>
-
-          <div class="game-content">
-
-            <div class="back-text">
-
-              <h2>Maior arrecadação no total</h2>
-                <div class="game-text">
-                  <img src="../img/recordes/gtav.jpg" alt="gtaV">
-                  <p>O sucesso de GTA V é simplesmente fenomenal. É o "videogame de ação e aventura mais vendido" de todos os tempos, conseguindo permanecer relevante
-                    em três gerações de consoles diferentes e ainda parece ótimo, apesar de ter sido lançado há mais de sete anos. Talvez sua conquista mais inspiradora seja a velocidade de lucro.
-                    <br>
-                    <br>
-                    O jogo precisou de apenas três dias para gerar US$ 1 bilhão em vendas, o que, de acordo com o Guinness, o torna a "propriedade de entretenimento mais rápida a obter faturamento
-                    bruto de US$ 1 bilhão". Considerando que esta categoria inclui blockbusters de Hollywood e álbuns mais vendidos, este é um feito verdadeiramente incrível e de longe o mais
-                    impressionante dos inúmeros da série Grand Theft Auto.
-                  </p>
                 </div>
 
-            </div>
+                <div class="back-text" style="color: #f8f6f7; height: auto;">
 
-          </div>
-          
-          <div class="back-text">
+                  <h2>Maior arrecadação no total</h2>
+                  <div class="game-text">
+                    <img src="../img/recordes/gtav.jpg" alt="gtaV">
+                    <p>O sucesso de GTA V é simplesmente fenomenal. É o "videogame de ação e aventura mais vendido" de todos os tempos, conseguindo permanecer relevante
+                      em três gerações de consoles diferentes e ainda parece ótimo, apesar de ter sido lançado há mais de sete anos. Talvez sua conquista mais inspiradora seja a velocidade de lucro.
+                      <br>
+                      <br>
+                      O jogo precisou de apenas três dias para gerar US$ 1 bilhão em vendas, o que, de acordo com o Guinness, o torna a "propriedade de entretenimento mais rápida a obter faturamento
+                      bruto de US$ 1 bilhão". Considerando que esta categoria inclui blockbusters de Hollywood e álbuns mais vendidos, este é um feito verdadeiramente incrível e de longe o mais
+                      impressionante dos inúmeros da série Grand Theft Auto.
+                    </p>
 
-            <div class="game-content">
+                    </div>
+                    
+                  </div>
 
-              <h2>Jogo mais vendido de todos os tempos</h2>
-              <div class="game-text">
-                <img src="../img/recordes/minecraft.jpg" alt="minecraft">
-                <p>Existem muitos jogos gratuitos que atraem um grande número de jogadores. Quando se trata de jogos comerciais, porém, poucos podem igualar o sucesso de Minecraft. Com mais de 200
-                  milhões de unidades vendidas, ele atualmente detém o Recorde Mundial do Guinness de "videogame mais vendido" e ainda conta com incríveis 126 milhões de jogadores ativos por mês.
-                <br>
-                O Guinness também reconhece o Minecraft como tendo o "maior mundo jogável em um videogame", graças ao seu mapa terrestre de 4.096.000.000 km². No entanto, é possível que esse recorde
-                tenha sido quebrado, com muitos jogos enormes de mundo aberto lançados desde que o recorde foi conquistado pela primeira vez em 2013. Perdendo este recorde em 2016.
-                </p>
+                </div>
 
-              </div>
+                <div class="back-text" style="color: #f8f6f7;">
+                  
+                  <div class="game-content">
 
-            </div>
+                    <h2>Jogo mais vendido de todos os tempos</h2>
+                    <div class="game-text">
+                      <img src="../img/recordes/minecraft.jpg" alt="minecraft">
+                      <p>Existem muitos jogos gratuitos que atraem um grande número de jogadores. Quando se trata de jogos comerciais, porém, poucos podem igualar o sucesso de Minecraft. Com mais de 200
+                        milhões de unidades vendidas, ele atualmente detém o Recorde Mundial do Guinness de "videogame mais vendido" e ainda conta com incríveis 126 milhões de jogadores ativos por mês.
+                      <br>
+                      O Guinness também reconhece o Minecraft como tendo o "maior mundo jogável em um videogame", graças ao seu mapa terrestre de 4.096.000.000 km². No entanto, é possível que esse recorde
+                      tenha sido quebrado, com muitos jogos enormes de mundo aberto lançados desde que o recorde foi conquistado pela primeira vez em 2013. Perdendo este recorde em 2016.
+                      </p>
+                    </div>
+                      
+                  </div>
 
-          </div>
-          
-          <div class="back-text">
+                </div>
 
-            <div class="game-content">
+                <div class="back-text">
 
-              <h2>O jogo mais transmitido no mundo</h2>
-              <div class="game-text">
-                <img src="../img/recordes/fortnite.jpg" alt="fortnite">
-                <p>Fortnite é um dos jogos de maior sucesso comercial já criados e desempenhou um grande papel na popularização do gênero Battle Royale. É um gênero que o jogo ainda domina até hoje,
-                  conforme refletido por seu recente recorde mundial do Guinness para "Mais Streams simultâneos na Twitch para um único jogo". O recorde foi estabelecido em 15 de junho de 2020, momento
-                  em que 117.582 pessoas estavam transmitindo o jogo.
-                <br>
-                <br>
-                Infelizmente, o Guinness não dá um número exato quando se trata de quantas pessoas estavam realmente assistindo naquele momento, mas outro registro recente dá uma forte indicação do
-                verdadeiro apelo do jogo. Na edição 2020 do GWR Gamer, Fortnite é reconhecido como a "Primeiro Battle Royale com 250 milhões de jogadores registrados."
-                </p>
+                  <div class="game-content">
+      
+                    <h2>O jogo mais transmitido no mundo</h2>
+                    <div class="game-text">
+                      <img src="../img/recordes/fortnite.jpg" alt="fortnite">
+                      <p>Fortnite é um dos jogos de maior sucesso comercial já criados e desempenhou um grande papel na popularização do gênero Battle Royale. É um gênero que o jogo ainda domina até hoje,
+                        conforme refletido por seu recente recorde mundial do Guinness para "Mais Streams simultâneos na Twitch para um único jogo". O recorde foi estabelecido em 15 de junho de 2020, momento
+                        em que 117.582 pessoas estavam transmitindo o jogo.
+                      <br>
+                      <br>
+                      Infelizmente, o Guinness não dá um número exato quando se trata de quantas pessoas estavam realmente assistindo naquele momento, mas outro registro recente dá uma forte indicação do
+                      verdadeiro apelo do jogo. Na edição 2020 do GWR Gamer, Fortnite é reconhecido como a "Primeiro Battle Royale com 250 milhões de jogadores registrados."
+                      </p>
+      
+                    </div>
+                    
+                  </div>
+      
+                </div>
 
+                <div class="back-text">
+            
+                  <div class="game-content">
+                    <h2>Mais indicações e prêmios ganhos por um jogo</h2>
+                    <div class="game-text">
+                      <img src="../img/recordes/tlou2.jpg" alt="tlou2">
+                      <p>A Parte 2 pode ter dividido os fãs com algumas de suas escolhas narrativas, mas a maioria pode concordar que The Last of Us é uma verdadeira obra-prima. Atualmente, ele possui uma
+                        classificação de 95 no Metacritic e ganhou vários prêmios desde seu lançamento. No entanto, tem sido particularmente bem-sucedido nos BAFTAs de videogame, detendo o recorde de
+                        "Mais indicações ao prêmio BAFTA para um videogame", bem como a maioria das vitórias com 12 e 7,
+                        <br>
+                        <br>
+                        Ele também detém um recorde interessante relacionado ao seu DLC Left Behind, que em 2015 ganhou BAFTAs de videogame para "Melhor Artista" e "Melhor História". Ao fazer isso, foi
+                        reconhecido pelo Guinness como sendo o "primeiro DLC a ganhar um BAFTA de videogame". Até agora, este é um feito que ainda não foi repetido.
+                      </p>
+                    </div>
+                  </div>
+  
               </div>
               
+              <div class="center-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th colspan="2"> Jogos mais vendidos do mundo</th>
+                    </tr>
+                    <tbody>
+                      <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                      </tr>
+                    </tbody>
+                  </thead>
+                  
+                </table>
+              </div>
+
             </div>
 
-          </div>
-          
-          <div class="back-text">
-            
-          <div class="game-content">
-            <h2>Mais indicações e prêmios ganhos por um jogo</h2>
-            <div class="game-text">
-              <img src="../img/recordes/tlou2.jpg" alt="tlou2">
-              <p>A Parte 2 pode ter dividido os fãs com algumas de suas escolhas narrativas, mas a maioria pode concordar que The Last of Us é uma verdadeira obra-prima. Atualmente, ele possui uma
-                classificação de 95 no Metacritic e ganhou vários prêmios desde seu lançamento. No entanto, tem sido particularmente bem-sucedido nos BAFTAs de videogame, detendo o recorde de
-                "Mais indicações ao prêmio BAFTA para um videogame", bem como a maioria das vitórias com 12 e 7,
-                <br>
-                <br>
-                Ele também detém um recorde interessante relacionado ao seu DLC Left Behind, que em 2015 ganhou BAFTAs de videogame para "Melhor Artista" e "Melhor História". Ao fazer isso, foi
-                reconhecido pelo Guinness como sendo o "primeiro DLC a ganhar um BAFTA de videogame". Até agora, este é um feito que ainda não foi repetido.
-              </p>
-            </div>
-          </div>
+      </div>
 
-        </div>
+    <footer>
+      <p>&copy; 2023 - Todos os direitos reservados</p>
+      <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
+        <ul>
+          <li><a href="#"><p>Termos de uso</p></a></li>
+          <li><a href="#"><p>Política de privacidade</p></a></li>
+          <li><a href="#"><p>Sobre nós</p></a></li>
+        </ul>
+    </footer>
 
-      </section>
+    </div>
 
-      <footer>
+  </div>
+</body>
 
-        <p>&copy; 2023 - Todos os direitos reservados</p>
-        <p>Entre em contato pelo e-mail: contato@simulacao.com</p>
-
-          <ul>
-            <li><a href="#"><p>Termos de uso</p></a></li>
-            <li><a href="#"><p>Política de privacidade</p></a></li>
-            <li><a href="#"><p>Sobre nós</p></a></li>
-          </ul>
-
-      </footer>
-  </body>
 <script>
 let popup = document.getElementById("popup");
 
@@ -379,5 +474,7 @@ function validatePassword(){
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
 </script>
+
 </main>
+
 </html>
