@@ -44,7 +44,7 @@ header {
 .banner-area h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 5.5rem;
   color: #ffff;
   text-align: center;
 }
@@ -100,12 +100,13 @@ header {
 
 .back-text p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-top: 10px;
 }
 
 .back-text h2 {
   font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem;
 }
 
 .intro {
@@ -129,7 +130,7 @@ header {
 
 .intro p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .game-content {
@@ -162,7 +163,7 @@ header {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 
   width: 95%;
   padding: 0 25px;
@@ -171,22 +172,74 @@ header {
 }
 
 .center-table {
-  width: 95%;
-  padding: 0 25px;
+  width: 97%;
   padding-bottom: 15px;
+  margin: 0 auto;
 }
 
 table {
-  padding: 5px;
-  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
   background-color: #0d0d0d;
   color: #fff;
   border-radius: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table td, th {
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+table td {
+  font-size: 0.9rem;
+}
+
+tbody td:not(:last-child), th:not(:last-child){
+  border-right: 1px solid #5f5f5f;
+}
+
+table tbody th {
+  background-color: #080808;
 }
 
 table thead th {
-  border-bottom: 1px solid #458390;
-  width: 110%;
+  border-bottom: 1px solid #5f5f5f;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+table a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.table-intro h2{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.table-intro p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  
+  margin: 0 auto;
+}
+
+.titulos-linha {
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.table-jogos:not(:last-child) td {
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.table-jogos .posicao {
+  color: rgb(0, 247, 255);
 }
 
 </style>
@@ -400,17 +453,115 @@ table thead th {
                   </div>
   
               </div>
+
+              <div class="back-text">
+
+                <div class="table-intro">
+  
+                  <h2>Falando mais da indústria dos jogos</h2>
+                  <p>
+                    Como falado antes, o jogo Minecraft foi o jogo mais vendido do mundo, e para se aprofudnar mais neste mundo, vamos listar os 10 jogos mais vendidos de todos os tempos,
+                    considerando somente jogos pagos e as cópias originais do jogo.
+                  </p>
+  
+                </div>
+
+              </div>
               
               <div class="center-table">
                 <table>
                   <thead>
                     <tr>
-                      <th colspan="2"> Jogos mais vendidos do mundo</th>
+                      <th colspan="6" style="font-size: 2rem;"> Jogos mais vendidos do mundo</th>
                     </tr>
                     <tbody>
-                      <tr>
-                        <td>cell 1</td>
-                        <td>cell 2</td>
+                      <tr class="titulos-linha">
+                        <th>Posição</th>
+                        <th>Título</th>
+                        <th>Vendas</th>
+                        <th>Plataforma(s)</th>
+                        <th>Lançamento</th>
+                        <th>Desenvolvedora(s)</th>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">1</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Minecraft">Minecraft</a></td>
+                        <td class="vendas">300.000.000</td>
+                        <td class="plataformas">Multi-Plataforma</td>
+                        <td class="lancamento">18 de novembro de 2011</td>
+                        <td class="desenvolvedora">Mojang</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">2</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Grand_Theft_Auto_V">Grand Theft Auto V</a></td>
+                        <td class="vendas">185.000.000</td>
+                        <td class="plataformas">Multi-Plataforma</td>
+                        <td class="lancamento">17 de setembro de 2013</td>
+                        <td class="desenvolvedora">Rockstar Games</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">3</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Tetris">Tetris</a></td>
+                        <td class="vendas">100.000.000</td>
+                        <td class="plataformas">Multi-Plataforma</td>
+                        <td class="lancamento">6 de junho de 1984</td>
+                        <td class="desenvolvedora">Elektronorgtechnica</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">4</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Wii_Sports">Wii Sports</a></td>
+                        <td class="vendas">82.900.000</td>
+                        <td class="plataformas">Wii</td>
+                        <td class="lancamento">19 de novembro de 2006</td>
+                        <td class="desenvolvedora">Nintendo EAD</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">5</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/PlayerUnknown%27s_Battlegrounds">PlayerUnknown's Battlegrounds</a></td>
+                        <td class="vendas">75.000.000</td>
+                        <td class="plataformas">Multi-Plataforma</td>
+                        <td class="lancamento">20 de dezembro de 2017</td>
+                        <td class="desenvolvedora">PUBG Studios</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">6</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Mario_Kart_8">Mario Kart 8 / Deluxe</a></td>
+                        <td class="vendas">63.920.000</td>
+                        <td class="plataformas">Wii U / Switch</td>
+                        <td class="lancamento">29 de maio de 2014</td>
+                        <td class="desenvolvedora">Nintendo EAD</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">7</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Super_Mario_Bros.">Super Mario Bros</a></td>
+                        <td class="vendas">58.000.000</td>
+                        <td class="plataformas">Multi-Plataforma</td>
+                        <td class="lancamento">13 de setembro de 1985</td>
+                        <td class="desenvolvedora">Nintendo</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">8</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Red_Dead_Redemption_2">Red Dead Redemption 2</a></td>
+                        <td class="vendas">55.000.000</td>
+                        <td class="plataformas">Multi-plataforma	</td>
+                        <td class="lancamento">26 de outubro de 2018</td>
+                        <td class="desenvolvedora">Rockstar Studios</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">9</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/Overwatch">Overwatch</a></td>
+                        <td class="vendas">50.000.000	</td>
+                        <td class="plataformas">Multi-Plataforma</td>
+                        <td class="lancamento">24 de maio de 2016	</td>
+                        <td class="desenvolvedora">	Blizzard Entertainment</td>
+                      </tr>
+                      <tr class="table-jogos">
+                        <td class="posicao">10</td>
+                        <td class="titulo"><a href="https://pt.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt">The Witcher 3: Wild Hunt</a></td>
+                        <td class="vendas">50.000.000	</td>
+                        <td class="plataformas">Multi-Plataforma</td>
+                        <td class="lancamento">19 de maio de 2015	</td>
+                        <td class="desenvolvedora">CD Projekt Red</td>
                       </tr>
                     </tbody>
                   </thead>
