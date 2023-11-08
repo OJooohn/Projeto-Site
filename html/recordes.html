@@ -26,7 +26,6 @@ header {
   height: 560px;
   width: 100%;
   position: fixed;
-
 }
 
 .banner-area::after {
@@ -155,6 +154,7 @@ header {
 }
 
 .game-text p {
+  vertical-align: middle;
   width: 95%;
   margin: auto auto;
 }
@@ -167,8 +167,6 @@ header {
 
   width: 95%;
   padding: 0 25px;
-  padding-bottom: 15px;
-  margin: 0 auto;
 }
 
 .center-table {
@@ -181,9 +179,11 @@ table {
   font-family: 'Montserrat', sans-serif;
   background-color: #0d0d0d;
   color: #fff;
+  border: 20px solid rgba(95, 95, 95, 0);
   border-radius: 10px;
   border-collapse: collapse;
   width: 100%;
+  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -203,7 +203,7 @@ tbody td:not(:last-child), th:not(:last-child){
 }
 
 table tbody th {
-  background-color: #080808;
+  background-color: #080809;
 }
 
 table thead th {
@@ -236,6 +236,10 @@ table a {
 
 .table-jogos:not(:last-child) td {
   border-bottom: 1px solid #5f5f5f;
+}
+
+.table-jogos .titulo:hover {
+  text-decoration: underline;
 }
 
 .table-jogos .posicao {
