@@ -178,10 +178,8 @@ table {
   font-family: 'Montserrat', sans-serif;
   background-color: #0d0d0d;
   color: #fff;
-  border-radius: 10px;
   border-collapse: collapse;
   width: 100%;
-  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -189,7 +187,7 @@ table td, th {
   text-align: center;
   margin: auto;
   vertical-align: middle;
-  padding: 8px;
+  padding: 8px 0px;
 }
 
 table td {
@@ -206,7 +204,11 @@ table tbody th, thead {
 
 table thead th {
   font-size: 1.5rem;
-  padding: 10px;
+  padding: 10px 0px;
+}
+
+tbody th {
+  padding: 12px;
 }
 
 table a {
@@ -221,6 +223,7 @@ table a {
 }
 
 .table-intro p {
+  width: 99%;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   
@@ -229,6 +232,7 @@ table a {
 
 .titulos-linha {
   border-bottom: 1px solid #5f5f5f;
+  border-top: 1px solid #5f5f5f;
 }
 
 .table-jogos:not(:last-child) td {
@@ -244,10 +248,11 @@ table a {
 }
 
 .center-table {
-  width: 99%;
+  width: 100%;
   margin: 15px auto 10px auto;
   border: 3px solid #5f5f5f;
   border-radius: 10px;
+  overflow-x: auto;
 }
 
 </style>
